@@ -1,0 +1,8 @@
+headline: Kontakt
+teaser: Das Kazong-Team kümmert sich gerne um die Anliegen der Community!
+company: Berlin, Germany
+form:
+  name: Name
+  email: Email
+  comment: Kommentar
+  submit: Abschicken

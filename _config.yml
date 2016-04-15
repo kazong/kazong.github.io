@@ -23,9 +23,5 @@ default_language: de
 
 # Build settings
 markdown: kramdown
-gems:
-  - jekyll-assets
-assets:
-  compress:
-    css: sass
-    js:  uglifier
+sass:
+    style: compressed

@@ -8,21 +8,4 @@ author: Kazong Games
 
 {% include homepage.liquid %}
 
-<section class="bg-responsive2">
-    <article class="wrapper-small">
-        <h2 class="wrapper-small section-headline">Kontakt</h2>
-        <div class="contact-form">
-            <form method="post" action="https://formspree.io/{{ site.email }}" id="contactform">
-                <input type="hidden" name="_format" value="plain" />
-                <input type="text" name="name" id="name" placeholder="Name"/>
-                <input type="text" name="_replyto" id="email" placeholder="Email" />
-                <textarea name="text" id="comments" placeholder="Kommentar" class="comments"></textarea>
-                <input type="submit" value="Abschicken" class="submit-btn"/>
-            </form>
-        </div>
-        <div class="contact-txt">
-            <p class="company-txt">Das Kazong-Team kümmert sich gerne um die Anliegen der Community!</p>
-            <p>Berlin, Germany</p>
-        </div>
-    </article>
-</section>
+{% include contact.liquid %}

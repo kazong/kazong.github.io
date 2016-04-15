@@ -1,0 +1,8 @@
+headline: Contact
+teaser: The Kazong Team will be happy to help!
+company: Berlin, Germany
+form:
+  name: Name
+  email: Email
+  comment: Comment
+  submit: Submit

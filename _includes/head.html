@@ -6,7 +6,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <meta name="author" content="Kazong Games" />
-    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
+    <meta name="description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
     <meta http-equiv="cache-control" content="public" />
 
     <meta property="og:url" content="https://kazong-game.com/de/" />
@@ -15,7 +15,7 @@
     <meta property="og:description" content="Challenge your friends in a 3 round match of different games" />
     <meta property="og:image" content="///kazong-game.com/img/fb/msg-img3.png" />
 
-    <link rel="icon" type="image/ico" href="{% asset_path fav-ico.ico %}" />
+    <link rel="icon" type="image/ico" href="/images/fav-ico.ico" />
     <link href='///fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css' />
     <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}" />
 
