@@ -1,0 +1,29 @@
+---
+layout: default
+language: en
+title: Kazong - Play with Friends
+description: Kazong Game | Quiz, Mini, Brain-Game Multiplayer APP!
+author: Kazong Games
+---
+
+{% include homepage.liquid %}
+
+<section class="bg-responsive2">
+    <article class="wrapper-small">
+        <h2 class="wrapper-small section-headline">Contact</h2>
+        <div class="contact-form">
+            <form method="post" action="https://formspree.io/{{ site.email }}" id="contactform">
+                <input type="hidden" name="_format" value="plain" />
+                <input type="text" name="name" id="name" placeholder="Name"/>
+                <input type="text" name="email" id="email" placeholder="Email" />
+                <textarea name="comments" id="comments" placeholder="Comment" class="comments"></textarea>
+                <input type="submit" name="submit" value="Send" class="submit-btn"/>
+            </form>
+        </div>
+        <div class="contact-txt">
+            <p class="company-txt">The Kazong Team will be happy to help!</p>
+            <p>Berlin, Germany</p>
+            <!--p><a href="support@good-timez.com">support@kazong-games.com</a></p-->
+        </div>
+    </article>
+</section>
