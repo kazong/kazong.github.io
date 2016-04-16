@@ -10,7 +10,7 @@
                     {% if language == site.default_language %}
                     <a href="/"><img class="lang-sel-img" src="{{ page.base_dir }}images/{{ lang_icon }}"/></a>
                     {% else %}
-                    <a href="{{ language }}/"><img class="lang-sel-img" src="{{ page.base_dir }}images/{{ lang_icon }}"/></a>
+                    <a href="/{{ language }}/"><img class="lang-sel-img" src="{{ page.base_dir }}images/{{ lang_icon }}"/></a>
                     {% endif %}
                 {% else %}
                 <img class="lang-sel-img" src="{{ page.base_dir }}images/{{ lang_icon }}"/>
