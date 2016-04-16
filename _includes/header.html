@@ -1,7 +1,7 @@
 <header class="header-unit unit" itemscope itemtype="http://schema.org/Product">
     <h1 class="brandheader"><span itemprop="name">Kazong Game</span>. <span itemprop="description">Quiz-, Mini & Brain-Game Multiplayer App</span></h1>
     <div class="wrapper text-center" itemscope itemtype="http://schema.org/ImageObject">
-        <img class="header-logo" src="/{{ page.base_dir }}images/corporate/kazong-header.png" alt="Kazong Game | Quiz, Mini, Brain-Game Multiplayer APP" itemprop="contentUrl">
+        <a href="/{{page.language}}"><img class="header-logo" src="/{{ page.base_dir }}images/corporate/kazong-header.png" alt="Kazong Game | Quiz, Mini, Brain-Game Multiplayer APP" itemprop="contentUrl"></a>
         <ul class="lang-links">
             {% for language in site.languages %}
             {% capture lang_icon %}{{ language }}.png{% endcapture %}
