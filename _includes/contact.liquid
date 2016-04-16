@@ -6,9 +6,9 @@
         <div class="contact-form">
             <form method="post" action="https://formspree.io/{{ site.email }}" id="contactform">
                 <input type="hidden" name="_format" value="plain" />
-                <input type="text" name="name" id="name" placeholder="{{ contact.form.name }}"/>
-                <input type="text" name="_replyto" id="email" placeholder="{{ contact.form.email }}" />
-                <textarea name="text" id="comments" placeholder="{{ contact.form.comment }}" class="comments"></textarea>
+                <input type="text" name="name" id="name" minlength="2" placeholder="{{ contact.form.name }}" required />
+                <input type="email" name="_replyto" id="email" placeholder="{{ contact.form.email }}" required />
+                <textarea name="text" id="comments" minlength="10" placeholder="{{ contact.form.comment }}" class="comments" required></textarea>
                 <input type="submit" value="{{ contact.form.submit }}" class="submit-btn"/>
             </form>
         </div>
