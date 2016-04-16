@@ -1,0 +1,12 @@
+name: Presse
+headline: KAZONG PRESSKIT
+description: Produkt Beschreibung
+folder: Komplette Pressemappe
+publication:
+  headline: Pressemitteilungen
+  releases:
+    -
+      date: 20.04.2016
+      text: KAZONG OUT NOW ON GOOGLE PLAY AND iOS
+      pdf_path: "#link-pdf"
+      txt_path: "#link-txt"
