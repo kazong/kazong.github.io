@@ -7,7 +7,7 @@
 
 # Site settings
 title: Play Quiz-, Mini- and Brain-Games against your Friends.
-email: info@kazong-game.com
+email: contact@kazong-game.com
 description: > # this means to ignore newlines until "baseurl:"
   Kazong Game | Quiz, Mini, Brain-Game Multiplayer APP
 baseurl: "" # the subpath of your site, e.g. /blog
