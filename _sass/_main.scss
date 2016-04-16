@@ -228,28 +228,38 @@ body { background-color: #fff; color: #fff; margin: 0; }
     }
 }
 
-.game-preview {
-    text-align: center;
-    list-style: none;
-    padding: 0;
-    margin: 0;
+.slider-container {
+    .lSSlideOuter {
+        margin-bottom: 30px;
 
-    .preview-item {
+        .lSSlideWrapper {
+            &.usingCss {
+                margin-bottom: 30px;
+            }
+        }
+    }
+    .game-preview {
+        text-align: center;
+        list-style: none;
+        padding: 0;
+        margin: 0;
 
-        .game-description {
-            display: inline-table;
-            vertical-align: top;
+        .preview-item {
+            .game-description {
+                display: inline-table;
+                vertical-align: top;
 
-            .game-txt-wrapper {
-                display: table-cell;
-                vertical-align: middle;
+                .game-txt-wrapper {
+                    display: table-cell;
+                    vertical-align: middle;
 
-                .game-name {
-                    display: block;
-                    font-weight: 700
-                }
-                .game-txt {
-                    text-justify: inter-word;
+                    .game-name {
+                        display: block;
+                        font-weight: 700
+                    }
+                    .game-txt {
+                        text-justify: inter-word;
+                    }
                 }
             }
         }
@@ -384,7 +394,6 @@ body { background-color: #fff; color: #fff; margin: 0; }
     margin: 0 auto
 }
 
-.game-preview { padding: 60px 0 120px 0; }
 .game-prev-img { height: 425px }
 .game-description {
     width: 200px;
@@ -534,7 +543,6 @@ body { background-color: #fff; color: #fff; margin: 0; }
     margin: 0 auto
 }
 
-.game-preview { padding: 40px; }
 .game-prev-img { height: 300px }
 .game-description {
     width: 200px;
@@ -670,7 +678,6 @@ body { background-color: #fff; color: #fff; margin: 0; }
     margin: 0 auto
 }
 
-.game-preview { padding: 40px; }
 .game-description {
     width: 200px;
     height: 300px;
@@ -806,7 +813,6 @@ body { background-color: #fff; color: #fff; margin: 0; }
     margin: 0 auto;
 }
 
-.game-preview { padding: 25px 0 65px 0; }
 .game-description {
     width: 150px;
     height: 275px;
@@ -949,7 +955,6 @@ textarea:-ms-input-placeholder { font-size: 10px }
     margin: 0 auto;
 }
 
-.game-preview { padding: 30px 0 50px 0; }
 .game-description {
     width: 150px;
     height: 275px;
@@ -1032,7 +1037,6 @@ textarea:-ms-input-placeholder { font-size: 10px }
 .slick-dots { bottom: 7px;  }
 .slick-dots li { margin: auto }
 
-.game-preview { padding: 20px 0 30px 0; }
 .game-description {
     width: 100px;
     height: 200px;
