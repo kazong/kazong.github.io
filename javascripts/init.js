@@ -46,7 +46,6 @@ function registerHighResImageLoading() {
 };
 // helper method for creating the slider for previewing games
 function createGamesPreviewSlider() {
-    console.log("Init slider somehow sometime ...");
     $('.game-preview').lightSlider({ item: 1 });
 };
 
