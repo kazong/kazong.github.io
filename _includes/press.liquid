@@ -1,0 +1,28 @@
+<section class="hero-unit unit">
+        <canvas id="pixie" class="bg-anim"></canvas>
+
+        <article class="wrapper">
+            <h2 class="section-headline ClearBottom">{{ press.headline }}</h2>
+            <div class="section-one btn-press-unit">
+                <div class="cell">
+                    <img class="btn-getpress" src="images/btn/txt-pink.png">
+                    <p>Download<br><span>{{ press.description }}</span></p>
+                </div>
+                <div class="cell">
+                    <img class="btn-getpress last" src="images/btn/pdf-blue.png">
+                    <p>Download<br><span>Screenshots &amp; Images</span></p>
+                </div>
+                <div class="cell">
+                    <img class="btn-getpress last" src="images/btn/pressfolder.png">
+                    <p>Download<br><span>{{ press.folder }}</span></p>
+                </div>
+            </div>
+        </article>
+
+        <article class="wrapper">
+            <h3 class="section-headline md">{{ press.publication.headline }}</h3>
+            {% for release in press.publication.releases %}
+            {% include release_item.liquid %}
+            {% endfor %}
+        </article>
+    </section>

@@ -4,6 +4,7 @@
 
 .col-md-8 { width: 67%; }
 .relative { position: relative; }
+.vmiddle { vertical-align: middle; }
 .v-bottom { vertical-align: bottom; }
 .inline { display: inline-block }
 .align-top { vertical-align: top }
@@ -15,6 +16,8 @@
 .ClearBottom { padding-bottom: 0px !important; }
 .bold { font-weight: bold; }
 
+.table { display: table; }
+.cell { display: table-cell; }
 .tbl-cell {
     display: table-cell;
     height: inherit;
@@ -268,6 +271,12 @@ body { background-color: #fff; color: #fff; margin: 0; }
 
 .section-headline.border-top { border-top: 2px solid #34293a }
 
+.btn-press-unit { display: table; text-align: center; }
+.btn-press-unit p { text-shadow: none; }
+.btn-press-unit span { font-weight: bold; }
+.release-title { font-weight: bold; }
+.release-date { font-style: italic; }
+
 /*-----------------------------------------------------------------------------------*/
 /*  END HOMEPAGE STYLES
 /*-----------------------------------------------------------------------------------*/
@@ -415,6 +424,23 @@ body { background-color: #fff; color: #fff; margin: 0; }
 .contact-txt h1 { margin-bottom: 20px; }
 .company-txt { margin-bottom: 30px; }
 .submit-btn { width: 200px !important; }
+
+/* PRESS */
+.btn-press-unit { width: 50%; margin: auto; padding: 35px 0; }
+.btn-getpress { width: 175px; }
+.btn-press-unit span { font-size: 17px; line-height: 30px; }
+
+.release-unit {
+    display: table;
+    width: 50%;
+    margin: 0 auto 30px auto;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    background-color: #34293a;
+}
+.release-msg { padding-left: 10px; }
+.icon { width: 35px; }
 
 
 /* helper */
