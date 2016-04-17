@@ -1,21 +1,21 @@
 herounit:
-  headline: "Spiele Quiz-, Mini- and Brain-Games gegen deine Freunde."
-  kicker: "Lade Kazong aus deinem App Store und fordere deine Freunde heraus!"
+  headline: "Quiz-, Mini et jeux intellectuels contre tes amis."
+  kicker: "Télécharge et défie tes amis!"
   download_labels:
-    ios: "Download on the App Store"
-    android: "Get it on Google Play"
+    ios: "Télécharge gratuitement sur l'App Store"
+    android: "Télécharge gratuitement sur Google Play"
 
 challengeunit:
-  titel: "Challenge Modus"
-  headline: "Spannende Challenges mit Freunden und anderen Spielern"
-  kicker: "1 Challenge. . . 3 Runden. . . 3 Games!"
+  titel: "Mode défi"
+  headline: "Défis passionnants avec des amis et d'autres joueurs"
+  kicker: "1 défi. . . 3 tours. . . 3 jeux!"
   features:
   - "+10 Spiele"
-  - "+12.000 Quizfragen"
-  - "Chat - Funktion"
-  - "Singleplayer"
-  - "Eigene Fragen"
-  - "Spieler-Statistiken"
+  - "+12.000 questions du quiz"
+  - "Chat"
+  - "Mode Solo"
+  - "Propres questions"
+  - "Statistiques des joueurs"
 
 games_label: Spiele
 screenshots:
