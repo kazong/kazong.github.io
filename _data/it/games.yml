@@ -2,28 +2,28 @@
 
 - {
     name: "50 Lines",
-    description: "50 Kästchen, die du schnellst möglich klicken musst, um ins Ziel zu kommen.",
-    teaser: "Teste deine Reaktion und Fingerfertigkeit. Ein Geschicklichkeits Mini Spiel bei dem jede Milisekunde zählt",
+    description: "Ci sono 50 caselle. Non toccare le caselle blu! Essere il più veloce possibile.",
+    teaser: "Metti alla prova la tua reazione e destrezza. Un mini gioco di abilità in cui uno ogni millisecondo",
     screenshot: "lang/it/50lines.png",
     icon: {
-      label: "50Lines! - Kazong Mini Game",
+      label: "50Lines! - Kazong giochi di abilità",
       path: "game-icons/white_shade/50lines.png"
     }
 }
 - {
     name: "Number Burst",
-    description: "Die richtige Zahlenreihenfolge ist gesucht! Stelle deine Denkfähigkeit unter Beweis und zeigs den anderen.",
-    teaser: "Tippe die richtige Zahlenreihenfolge. Ein Spiel als wahrer Gehirntrainer.",
+    description: "Raccogliere il maggior numero di numeri possibile. Cliccare dal più piccolo al più grande numeri.",
+    teaser: "Digitare il numero di sequenza. Un gioco come un vero rompicapo.",
     screenshot: "lang/it/burst.png",
     icon: {
-      label: "Number Burst - Kazong Brain Game",
+      label: "Number Burst - Kazong giochi cerebrali",
       path: "game-icons/white_shade/burst.png"
     }
 }
 - {
     name: "PicsUp",
-    description: "Errate das Bild! Aber achte auf deine Punktzahl. In der Challenge zählt die richtige Strategie!",
-    teaser: "Du bekommst eine Kategory und ein verdecktes Bild. Decke das Bild mit bedacht auf und errate das Wort mithilfe der angezeigten Buchstaben.",
+    description: "Indovina la foto! Ma attenzione il tuo punteggio. La sfida include la strategia giusta!",
+    teaser: "È possibile ottenere una categoria e una immagine nascosta. Ricoprire l'immagine con saggezza e indovinare la parola usando le lettere mostrate.",
     screenshot: "lang/it/picsup.png",
     icon: {
       label: "PicsUP - Kazong Quiz Game",
@@ -31,39 +31,39 @@
     }
 }
 - {
-    name: "Bier Quiz",
-    description: "Man(n) lernt nie aus. In welchen Länder standst du schon mit deinem Buddy an der Bar? Und wer kann sich noch am besten erinnern?",
-    teaser: "Biersorten aus der ganzen Welt. Als Bierkenner weisst du aus welchem Land das Bier stammt.",
+    name: "Birra Quiz",
+    description: "La birra provenienti da tutto il mondo.Hai bevuto la birra già?",
+    teaser: "Birre da tutto il mondo. Come birra conoscitore sapete da quale paese proviene birra.",
     screenshot: "lang/it/beer.png",
     icon: {
-      label: "Bier Quiz - Kazong Quiz Game",
+      label: "Birra Quiz - Kazong Quiz Game",
       path: "game-icons/white_shade/beer.png"
     }
 }
 - {
     name: "CountUP",
-    description: "Verbinde benachbarte Zahlenpaare um eine Zahl aufzusteigen. Die Zeit läuft &amp; die höchste Zahl gewinnt.",
-    teaser: "Ein Nummern-Puzzle für alt und Jung. Verbinde Zahlenpaare um gegen deinen Gegner zu gewinnen.",
+    description: "Collegare coppie adiacenti di numeri per raggiungere un numero più alto.  Il numero più alto vince.",
+    teaser: "Un numero di puzzle per grandi e piccini. Collega coppie di numeri per vincere contro il tuo avversario.",
     screenshot: "lang/it/countup.png",
     icon: {
-      label: "CountUP - Kazong Brain Game",
+      label: "CountUP - Kazong giochi cerebrali",
       path: "game-icons/white_shade/countup.png"
     }
 }
 - {
-    name: "Flaggen Quiz",
-    description: "Schwarz-Rot-Gold ... ganz einfach. Aber wie sieht die Flagge der Bahamas aus?",
-    teaser: "Errate die Flaggen der Länder der Welt. Lerne Flaggen von exotischen Ländern wie Belize oder Sri Lanka kennen.",
+    name: "Bandiera Quiz",
+    description: "Conoscete le bandiere del mondo?",
+    teaser: "Indovina le bandiere dei paesi del mondo. Incontra bandiere dei paesi esotici come il Belize o lo Sri Lanka.",
     screenshot: "lang/it/flags.png",
     icon: {
-      label: "Flaggen Quiz - Kazong Quiz Game",
+      label: "Bandiera Quiz - Kazong Quiz Game",
       path: "game-icons/white_shade/flags.png"
     }
 }
 - {
     name: "Quiz",
-    description: "1 Frage & 4 Antworten! <br> Das beste Training für deinen Auftritt bei \"Wer wird Millionär?\"",
-    teaser: "Teste dein Wissen und duellieren deine Freunde in Quizfragen aus verschiedenen Kategorien. Ein Quiz Duell der besonderen Art :)",
+    description: "1 domanda 4 risposte! Il miglior allenamento per la tua conoscenza!",
+    teaser: "Metti alla prova le tue conoscenze e duello i tuoi amici a quiz di varie categorie. Uno speciale quiz duello :)",
     screenshot: "lang/it/quiz.png",
     icon: {
       label: "Quiz - Kazong Quiz Game",
@@ -71,42 +71,42 @@
     }
 }
 - {
-    name: "Memory",
-    description: "Der Hit in jedem Kinderzimmer. Doch pass auf, hier möchte dein Gegenüber schneller sein als du!",
-    teaser: "Decke die Memory Karten auf und merke dir die Bilder. Das Ziel: So wenig Züge wie nötig.",
+    name: "MatchUP",
+    description: "Il colpo in qualsiasi vivaio. Ma attenzione, qui vogliono il tuo nemico di essere più veloce di te!",
+    teaser: "Rivela le schede di memoria e ricordare le immagini. L'obiettivo: il poco mosse, se necessario.",
     screenshot: "lang/it/memory.png",
     icon: {
-      label: "Memory - Kazong Brain Game",
+      label: "MatchUP - Kazong giochi cerebrali",
       path: "game-icons/white_shade/memory.png"
     }
 }
 - {
-    name: "Wahr oder Falsch?",
-    description: "Entscheide schnell ob die Aussage stimmt oder nicht! Verblüffende Tatsache oder dreiste Falschaussage? Keine leichte Entscheidung.",
+    name: "Vero o falso?",
+    description: "Decidere rapidamente se l'affermazione è vera o no! Fatto sorprendente o falsa dichiarazione palese? Non è una decisione facile.",
     teaser: "Sei schnell und entscheide, ob die Aussage stimmt oder falsch ist! Verblüffende Tatsachen aus den unterschiedlichsten Themengebieten stellen deine Allgemeinbildung auf die Probe. Vorsicht: Dreiste Falschaussagen und korrekten Fakten sind gemischt. Kannst du sie finden?",
     screenshot: "lang/it/truefalse.png",
     icon: {
-      label: "Wahr oder Falsch - Kazong Quiz Game",
+      label: "Vero o falso - Kazong Quiz Game",
       path: "game-icons/white_shade/truefalse.png"
     }
 }
 - {
     name: "Color Dots",
-    description: "Verbinde gleichfarbige Punkte! Die Zeit rennt. Dots verbunden zu einem Quadrat räumen das Feld auf und boosten deinen Score!",
-    teaser: "Verbinde gleichfarbige Punkte! Punkte verbunden zu einem Viereck räumen alle Dots der selben Farbe und erhöhen deine Punktzahl.",
+    description: "Collegare Dots con gli stessi colori. Uno stesso quadrato colorato svuota la casella!",
+    teaser: "Essere veloce e decidere se l'affermazione è vera o falsa! Sorprendente fatti da più diversi argomenti mettere la vostra conoscenza generale alla prova. Attenzione: errori arrogante e fatti corrette sono misti. Lo si può trovare.",
     screenshot: "lang/it/dots.png",
     icon: {
-      label: "Colored Dots - Kazong Mini Game",
+      label: "Colore Dots - giochi di abilità",
       path: "game-icons/white_shade/dots.png"
     }
 }
 - {
     name: "Memorize",
-    description: "Viele Kreise! Viele Farben. Ein Klick und alles ist Grau ... Weisst du noch, wo die orangenen Kreise waren?",
-    teaser: "Merke dir die Farben der Kreise. Wähle eine Farbe und klicke an der Stelle an der sich ein Kreis dieser Farbe verbirgt.",
+    description: "Molti cerchi! Molti colori. Un click e tutto è grigio ... Ricordate gli stessi cerchi colorati?",
+    teaser: "Ricordate il colore dei cerchi. Scegli un colore e fare clic nel punto in cui un cerchio di colore pelli.",
     screenshot: "memorize.png",
     icon: {
-      label: "Memorize - Kazong Brain Game",
+      label: "Memorize - Kazong giochi cerebrali",
       path: "game-icons/white_shade/memorize.png"
     }
 }
