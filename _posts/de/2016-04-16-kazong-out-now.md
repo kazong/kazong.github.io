@@ -13,6 +13,5 @@ files:
 ---
 
 # Kazong Released!
-## Play with Friends
 
 Das ist Wahnsinn! Zum ersten Mal ist Kazong gleichzeitig auf ios and android verfügbar!
