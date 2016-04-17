@@ -1,5 +1,17 @@
 {% assign contact = site.data[page.language].contact %}
 
+<div id="success-contact" class="popup" onclick="document.getElementById('success-contact').outerHTML='';">
+    <img src="{{ page.base_dir }}images/close-x.png" class="popup-close"/>
+    <div class="tbl-cell">
+        <img src="{{ page.base_dir }}images/ok-hook.png" class="success-img"/>
+        <div class="succes-txt">{{ contact.form.success.text }}</div>
+        <div class="succes-thx">{{ contact.form.success.thx }}</div>
+        <div class="succes-footer">
+            <div>{{ contact.form.success.footer }}</div>
+        </div>
+    </div>
+</div>
+
 <section class="bg-responsive2">
     <article class="wrapper-small">
         <h2 class="wrapper-small section-headline">{{ contact.headline }}</h2>

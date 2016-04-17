@@ -10,7 +10,7 @@ function doTheImprintHidingThing() {
     });
 };
 // helper method for shipping higher-res images based on given data-uri low-res ones
-function registerHighResImageLoading() {
+function initImageLoader() {
     var loaded_images = {};
     var $win = $(window);
     var getViewPortBounds = function() {
@@ -44,7 +44,7 @@ function registerHighResImageLoading() {
     loadImages(getViewPortBounds);
 };
 // helper method for creating the slider for previewing games
-function createGamesPreviewSlider() {
+function initGamesSlider() {
     $('.game-preview').lightSlider({ item: 1 });
 };
 // enable shariff social-sharing plugin
@@ -52,8 +52,34 @@ function initShariff() {
 
 
 };
+// register contact-form handler
+function initContactForm() {
+    var $form = $('#contactform').first();
+    if (!$form) return;
+    $form.submit(function(e) {
+        e.preventDefault();
+        $.ajax({
+            url: $form.attr('action'),
+            method: 'POST',
+            data: $form.serialize(),
+            dataType: 'json',
+            success: function(data) {
+                $('#success-contact').show();
+                $form[0].reset();
+            },
+            error: function(err) {
+                alert(
+                    "An error occured. Sorry for the inconvenience. Feel free to contact us at: contact@kazong-games.com"
+                );
+            }
+        });
+    });
+}
+// init all te thingz
 $(document).ready(function() {
     doTheImprintHidingThing();
-    registerHighResImageLoading();
-    createGamesPreviewSlider();
+    initImageLoader();
+    initShariff();
+    initGamesSlider();
+    initContactForm();
 });

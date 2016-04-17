@@ -6,3 +6,7 @@ form:
   email: Email
   comment: Kommentar
   submit: Abschicken
+  success:
+    thx: Dankeschön!
+    text: Deine E-Mail ist soeben bei uns eingeflogen <br>&amp; es wird sich sofort um dich gekümmern!
+    footer: Kazong Games - Enjoy playing

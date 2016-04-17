@@ -6,3 +6,7 @@ form:
   email: Email
   comment: Comment
   submit: Submit
+  success:
+    thx: Thank you!
+    text: We got your message and we'll get back to you soon!
+    footer: Kazong Games - Enjoy playing
