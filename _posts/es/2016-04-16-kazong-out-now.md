@@ -14,4 +14,4 @@ files:
 
 # Kazong Released!
 
-Das ist Wahnsinn! Zum ersten Mal ist Kazong gleichzeitig auf ios and android verfügbar!
+Das ist Wahnsinn! Zum ersten Mal ist Kazong gleichzeitig auf ios and android verfügbar! (translate to spanish here)
