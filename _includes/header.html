@@ -7,7 +7,7 @@
             {% capture lang_icon %}{{ language }}.png{% endcapture %}
             <li>
                 {% if language != page.language %}
-                    <a href="/{{ language }}"><img class="lang-sel-img" src="{{ page.base_dir }}images/{{ lang_icon }}"/></a>
+                    <a href="{{ page.url | replace:page.language,language }}"><img class="lang-sel-img" src="{{ page.base_dir }}images/{{ lang_icon }}"/></a>
                 {% else %}
                 <img class="lang-sel-img" src="{{ page.base_dir }}images/{{ lang_icon }}"/>
                 {% endif %}
