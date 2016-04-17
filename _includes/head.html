@@ -9,11 +9,11 @@
     <meta name="description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
     <meta http-equiv="cache-control" content="public" />
 
-    <meta property="og:url" content="https://kazong-game.com/de/" />
+    <meta property="og:url" content="{{ site.url }}/{{ page.language }}" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Quiz-, Mini-, Brain-Game Multiplayer APP" />
-    <meta property="og:description" content="Challenge your friends in a 3 round match of different games" />
-    <meta property="og:image" content="///kazong-game.com/img/fb/msg-img3.png" />
+    <meta property="og:title" content="{{ page.title }}" />
+    <meta property="og:description" content="{{ page.description }}" />
+    <meta property="og:image" content="{{ page.fb_image }}" />
 
     {% for language in site.languages %}{% capture lang_path %}/{{ page.language }}{% endcapture %}{% if language != page.language %}
     <link rel="alternate" href="/{{ language }}{{ page.url | remove_first:lang_path }}" hreflang="{{ language }}" />
