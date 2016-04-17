@@ -10,24 +10,24 @@ challengeunit:
   headline: "Défis passionnants avec des amis et d'autres joueurs"
   kicker: "1 défi. . . 3 tours. . . 3 jeux!"
   features:
-  - "+10 Spiele"
-  - "+12.000 questions du quiz"
+  - "+10 Jeux"
+  - "+12.000 Questions du quiz"
   - "Chat"
   - "Mode Solo"
   - "Propres questions"
-  - "Statistiques des joueurs"
+  - "Statistiques joueurs"
 
 games_label: Spiele
 screenshots:
   main:
     path: "lang/fr/main.png"
-    label: "Duelliere deine Freunde"
+    label: "Kazong est une application multijoueur."
   challenge:
     path: "lang/fr/challenge.png"
-    label: "In verschiedenen Quiz, Mini and Brain-Games"
+    label: " ...qui il est de différents jeux des catégories Quiz-, Brain- & Minigames et tu joues contre tes amis"
   selector:
     path: "selector.png"
-    label: "Wähle kostenlose Quiz-, Geschicklichkeits-, Logic- oder Denkspiele"
+    label: "Jouer Quiz-, jeux d'adresse  et jeux intellectuels contre tes amis"
   quiz_cut:
     path: "lang/fr/quiz-cut.png"
-    label: "Spannende Quiz Challenges im Duell mit deinen Freunden"
+    label: "Défis passionnants avec des amis et d'autres joueurs"
