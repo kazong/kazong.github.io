@@ -1,9 +1,11 @@
 <div class="release-unit">
-    <div class="cell vmiddle"><img class="icon" src="{{ page.base_dir }}images/icons/news.png"></div>
-    <div class="cell vmiddle release-msg">
-        <p class="release-title">{{ release.text }}</p>
-        <p class="release-date">{{ release.date }}</p>
-    </div>
-    <div class="cell vmiddle"><a href="{{ page.base_dir }}{{ release.pdf_path }}"><img class="icon" src="{{ page.base_dir }}images/icons/txt-pink.png"></a></div>
-    <div class="cell vmiddle"><a href="{{ page.base_dir }}{{ release.txt_path }}"><img class="icon" src="{{ page.base_dir }}images/icons/pdf-pink.png"></a></div>
+    <a href="{{ release.url }}">
+        <div class="cell vmiddle"><img class="icon" src="{{ page.base_dir }}images/icons/news.png"></div>
+        <div class="cell vmiddle release-msg">
+            <p class="release-title">{{ release.description }}</p>
+            <p class="release-date">{{ release.date | date: '%d-%m-%Y' }}</p>
+        </div>
+    </a>
+    <div class="cell vmiddle"><a href="{{ page.base_dir }}{{ release.files.pdf }}"><img class="icon" src="{{ page.base_dir }}images/icons/txt-pink.png"></a></div>
+    <div class="cell vmiddle"><a href="{{ page.base_dir }}{{ release.files.txt }}"><img class="icon" src="{{ page.base_dir }}images/icons/pdf-pink.png"></a></div>
 </div>

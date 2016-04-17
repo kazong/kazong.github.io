@@ -1,4 +1,5 @@
 {% assign press = site.data[page.language].press %}
+{% assign posts=site.posts | where:"language", page.language %}
 
 <section class="hero-unit unit">
     <canvas id="pixie" class="bg-anim"></canvas>
@@ -23,8 +24,12 @@
 
     <article class="wrapper">
         <h3 class="section-headline md">{{ press.publication.headline }}</h3>
-        {% for release in press.publication.releases %}
-        {% include release_item.liquid %}
+        <ul class="press-publications">
+        {% for release in posts %}
+            <li class="release-item">
+                {% include release_item.liquid %}
+            </li>
         {% endfor %}
+        </ul>
     </article>
 </section>

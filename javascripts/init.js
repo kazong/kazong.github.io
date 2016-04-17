@@ -38,7 +38,6 @@ function registerHighResImageLoading() {
             }
         });
     };
-
     $(document).scroll(function() {
         loadImages(getViewPortBounds);
     });
@@ -48,7 +47,11 @@ function registerHighResImageLoading() {
 function createGamesPreviewSlider() {
     $('.game-preview').lightSlider({ item: 1 });
 };
+// enable shariff social-sharing plugin
+function initShariff() {
 
+
+};
 $(document).ready(function() {
     doTheImprintHidingThing();
     registerHighResImageLoading();

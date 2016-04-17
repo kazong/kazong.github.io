@@ -287,6 +287,20 @@ body { background-color: #fff; color: #fff; margin: 0; }
 .release-title { font-weight: bold; }
 .release-date { font-style: italic; }
 
+.press-publications {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    .release-item {
+
+    }
+}
+
+.press-release-wrapper {
+    padding: 20px;
+}
+
 /*-----------------------------------------------------------------------------------*/
 /*  END HOMEPAGE STYLES
 /*-----------------------------------------------------------------------------------*/
