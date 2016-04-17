@@ -211,7 +211,7 @@ body { background-color: #fff; color: #fff; margin: 0; }
 .sub-features {
     width: 85%;
     margin-left: auto;
-
+    padding-left: 0px;
     .sub-feature-item {
         display: inline-block;
         padding: 10px 15px;
@@ -659,8 +659,8 @@ body { background-color: #fff; color: #fff; margin: 0; }
 .section-txt.right { text-align: right }
 
 .section1-headline { font-size: 22px; font-weight: bold; }
-.section1-sub { font-size: 18px; margin-top: 15px;}
-.sub-features { width: 100%; font-size: 13px; margin-top: 25px; }
+.section1-sub { font-size: 18px; margin-top: 15px; }
+.sub-features { width: 100%; font-size: 12px; margin-top: 25px; }
 .sub-features.es { width: 100%; font-size: 11px;}
 .sub-feature-item { padding: 10px 10px; margin-bottom: 8px; }
 .section1-img { display: inline-block;}
