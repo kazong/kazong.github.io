@@ -96,7 +96,7 @@
     teaser: "Connectez mêmes points de couleur! Points connectés à un carré effacer tous les points de la même couleur et d'augmenter votre score.",
     screenshot: "lang/fr/dots.png",
     icon: {
-      label: "Colored Dots - Kazong jeu d'habilité"",
+      label: "Colored Dots - Kazong jeu d'habilité",
       path: "game-icons/white_shade/dots.png"
     }
 }

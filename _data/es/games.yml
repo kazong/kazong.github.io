@@ -62,7 +62,7 @@
 }
 - {
     name: "El Quiz",
-    description: "1 pregunta y 4 respuestas!<br>Il miglior allenamento per la tua conoscenza?"",
+    description: "1 pregunta y 4 respuestas!<br>Il miglior allenamento per la tua conoscenza?",
     teaser: "Pruebe tus conocimientos y tus amigos en un duelo de preguntas de diversas categorías...Un duelo especial",
     screenshot: "lang/es/quiz.png",
     icon: {
