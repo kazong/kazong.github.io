@@ -74,14 +74,6 @@ textarea { resize: none; margin-bottom: 15px; padding: 10px 0;}
     opacity: 1;
 }
 
-.slick-slide { outline: none; }
-.slick-slider { margin-bottom: 0px; }
-.slick-slide img { display: inline-block; }
-.slick-prev,
-.slick-next { z-index: 5000; height: 10px !important; width: 10px !important; }
-.slick-dots li.slick-active button:before { color: #873caf; text-shadow: none; }
-.slick-dots li button:before { color: #fff }
-.slick-dots li button { color: #fff }
 
 /*-----------------------------------------------------------------------------------*/
 /*  POPUP
@@ -226,7 +218,7 @@ body { background-color: #fff; color: #fff; margin: 0; }
         margin-bottom: 10px;
         background-color: #453a4b;
         border-radius: 10px;
-        color: #f5d76e;;
+        color: #f5d76e;
         text-shadow: none;
         font-weight: bold;
         right: 0;
@@ -270,6 +262,11 @@ body { background-color: #fff; color: #fff; margin: 0; }
         }
     }
 }
+
+.lSSlideOuter .lSPager.lSpg > li { padding: 0 15px !important; }
+.lSSlideOuter .lSPager.lSpg > li a { height: 10px !important; width: 10px !important; }
+.lSSlideOuter .lSPager.lSpg>li:hover a, { background-color: #e119ff !important; }
+.lSSlideOuter .lSPager.lSpg>li.active a { background-color: #873caf !important; }
 
 /* BACKGROUNGDS */
 
@@ -399,18 +396,7 @@ body { background-color: #fff; color: #fff; margin: 0; }
 
 
 /* SECTION 2 */
-.slick-prev { left: 100px !important; }
-[dir='rtl'] .slick-prev {
-    right: -5px !important;
-    left: auto;
-}
-
-.slick-next { right: 125px !important; }
-[dir='rtl'] .slick-next {
-    right: auto;
-    left: -0px !important;
-}
-.slick-dots { bottom: 50px }
+.slider-container .lSSlideOuter .lSSlideWrapper.usingCss { margin-bottom: 45px; }
 
 .game-nav { padding: 40px 0 40px 0; }
 .nav-game-ico {
@@ -546,18 +532,7 @@ body { background-color: #fff; color: #fff; margin: 0; }
 
 
 /* SECTION 2 */
-.slick-prev { left: 100px !important; }
-[dir='rtl'] .slick-prev {
-    right: -5px !important;
-    left: auto;
-}
-
-.slick-next { right: 125px !important; }
-[dir='rtl'] .slick-next {
-    right: auto;
-    left: -0px !important;
-}
-.slick-dots { position: initial; }
+.slider-container .lSSlideOuter .lSSlideWrapper.usingCss { margin-bottom: 35px; }
 
 .game-nav { padding: 15px 0 15px 0; }
 .nav-game-ico {
@@ -586,7 +561,6 @@ body { background-color: #fff; color: #fff; margin: 0; }
 
 
 /* SECTION 3 */
-
 .wrapper-small { margin: 0 auto; width: 700px;}
 
 .contact-form { width: 68%; }
@@ -697,18 +671,7 @@ body { background-color: #fff; color: #fff; margin: 0; }
 
 
 /* SECTION 2 */
-.slick-prev { left: 5px !important; }
-[dir='rtl'] .slick-prev {
-    right: -5px !important;
-    left: auto;
-}
-
-.slick-next { right: 25px !important; }
-[dir='rtl'] .slick-next {
-    right: auto;
-    left: -0px !important;
-}
-.slick-dots { position: initial; }
+.slider-container .lSSlideOuter .lSSlideWrapper.usingCss { margin-bottom: 35px; }
 
 .game-nav { padding: 15px 0 15px 0; }
 .nav-game-ico {
@@ -848,18 +811,9 @@ body { background-color: #fff; color: #fff; margin: 0; }
 
 
 /* SECTION 2 */
-.slick-prev { left: -5px !important; }
-[dir='rtl'] .slick-prev {
-    right: -5px !important;
-    left: auto;
-}
-
-.slick-next { right: 5px !important; }
-[dir='rtl'] .slick-next {
-    right: auto;
-    left: -0px !important;
-}
-.slick-dots { bottom: 25px;  }
+.slider-container .lSSlideOuter .lSSlideWrapper.usingCss { margin-bottom: 25px; }
+.lSSlideOuter .lSPager.lSpg > li { padding: 0 11px !important; }
+.lSSlideOuter .lSPager.lSpg > li a { height: 8px !important; width: 8px !important; }
 
 .game-nav { padding: 8px 0; width: 100%; }
 .nav-game-ico {
@@ -1031,7 +985,8 @@ textarea:-ms-input-placeholder { font-size: 10px }
 
 
 /* SECTION 2 */
-.nav-dots { bottom: 15px;  }
+.lSSlideOuter .lSPager.lSpg > li { padding: 0 8px !important; }
+.lSSlideOuter .lSPager.lSpg > li a { height: 8px !important; width: 8px !important; }
 
 .game-nav { padding: 8px 0; width: 100%; }
 .nav-game-ico {
@@ -1138,8 +1093,8 @@ textarea:-ms-input-placeholder { font-size: 10px }
 .main-device-right { margin-left: 15px }
 
 /* SECTION 2 */
-.slick-dots { bottom: 7px;  }
-.slick-dots li { margin: auto }
+.lSSlideOuter .lSPager.lSpg > li { padding: 0 8px !important; }
+.lSSlideOuter .lSPager.lSpg > li a { height: 8px !important; width: 8px !important; }
 
 .game-description {
     width: 100px;
