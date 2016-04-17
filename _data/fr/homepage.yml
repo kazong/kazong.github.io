@@ -20,14 +20,14 @@ challengeunit:
 games_label: Spiele
 screenshots:
   main:
-    path: "lang/de/main.png"
+    path: "lang/fr/main.png"
     label: "Duelliere deine Freunde"
   challenge:
-    path: "lang/de/challenge.png"
+    path: "lang/fr/challenge.png"
     label: "In verschiedenen Quiz, Mini and Brain-Games"
   selector:
     path: "selector.png"
     label: "Wähle kostenlose Quiz-, Geschicklichkeits-, Logic- oder Denkspiele"
   quiz_cut:
-    path: "lang/de/quiz-cut.png"
+    path: "lang/fr/quiz-cut.png"
     label: "Spannende Quiz Challenges im Duell mit deinen Freunden"
