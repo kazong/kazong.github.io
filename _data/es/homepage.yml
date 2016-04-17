@@ -1,33 +1,33 @@
 herounit:
-  headline: "Spiele Quiz-, Mini- and Brain-Games gegen deine Freunde."
-  kicker: "Lade Kazong aus deinem App Store und fordere deine Freunde heraus!"
+  headline: "Juega Quiz-, Mini- y Brain-Games contra tus amigos."
+  kicker: "Descargue y desafía a tus amigos!"
   download_labels:
-    ios: "Download on the App Store"
-    android: "Get it on Google Play"
+    ios: "Descarga en la App Store"
+    android: "Descarga en la Google Play"
 
 challengeunit:
-  titel: "Challenge Modus"
-  headline: "Spannende Challenges mit Freunden und anderen Spielern"
-  kicker: "1 Challenge. . . 3 Runden. . . 3 Games!"
+  titel: "Modo de desafío"
+  headline: "Emocionantes retos con amigos y otros jugadores"
+  kicker: "1 Desafío. . . 3 Rondas. . . 3 Juegos!"
   features:
-  - "+10 Spiele"
+  - "+10 Juegos"
   - "+12.000 Quizfragen"
-  - "Chat - Funktion"
-  - "Singleplayer"
-  - "Eigene Fragen"
-  - "Spieler-Statistiken"
+  - "Función de chat"
+  - "Solo jugador"
+  - "Enviar preguntas"
+  - "Estadísticas"
 
 games_label: Spiele
 screenshots:
   main:
     path: "lang/es/main.png"
-    label: "Duelliere deine Freunde"
+    label: "Desafía a tus amigos gratis"
   challenge:
     path: "lang/es/challenge.png"
-    label: "In verschiedenen Quiz, Mini and Brain-Games"
+    label: "En varias Quiz, Mini and Brain-Games"
   selector:
     path: "selector.png"
-    label: "Wähle kostenlose Quiz-, Geschicklichkeits-, Logic- oder Denkspiele"
+    label: "Elija juego del cerebro, juego de habilidad y quiz gratis"
   quiz_cut:
     path: "lang/es/quiz-cut.png"
-    label: "Spannende Quiz Challenges im Duell mit deinen Freunden"
+    label: "Emocionantes retos con amigos y otros jugadores"
