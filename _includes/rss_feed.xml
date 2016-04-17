@@ -6,7 +6,7 @@
     <title>{{ site.title | xml_escape }}</title>
     <description>{{ site.description | xml_escape }}</description>
     <link>{{ site.url }}</link>
-    <atom:link href="{{ site.url }}/{{ page.language }}/feed.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="{{ site.url }}/{{ page.language }}/rss.xml" rel="self" type="application/rss+xml" />
     {% for post in posts %}
       <item>
         <title>{{ post.title | xml_escape }}</title>

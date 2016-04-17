@@ -2,4 +2,4 @@
 layout: null
 language: es
 ---
-{% include feed.xml %}
+{% include rss_feed.xml %}
