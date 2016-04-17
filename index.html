@@ -7,6 +7,19 @@ author: Kazong Games
 base_dir: ./
 ---
 
-{% include homepage.liquid %}
+<script type="text/javascript">
+var supportedLangs = [ 'de', 'es', 'it', 'en', 'fr' ];
+var defaultLang = 'en';
+var browserLang = navigator.language || navigator.userLanguage;
+var langParts = browserLang.split('-');
+var shortLang = defaultLang;
+if (langParts.length > 0) {
+    shortLang = langParts[0];
+    if (false === supportedLangs.indexOf(shortLang)) {
+        shortLang = defaultLang;
+    }
+}
+window.location.href = '/' + shortLang + '/';
+</script>
 
-{% include contact.liquid %}
+<a href="/en/">Kazong-Game</a>

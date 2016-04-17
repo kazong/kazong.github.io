@@ -31,6 +31,11 @@
     text-shadow: 1px 1px 1px #000;
 }
 
+html {
+    height: 100%;
+    background-color: #453a4b;
+}
+
 input, textarea { text-shadow: none; display: block; border: none; box-shadow: 1px 1px 3px rgba(0,0,0,.5), inset 0 1px 0 #fbfbfb; font-size: 14px; background: #fff; }
 input:focus, textarea:focus, input[type="submit"]:hover { border-color: #c7c7c7; }
 input[type="submit"] { width: auto; cursor: pointer; color: #a7a7a7; }
