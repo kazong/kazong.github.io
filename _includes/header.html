@@ -8,7 +8,7 @@
             {% capture lang_path %}/{{ page.language }}{% endcapture %}
             <li>
                 {% if language != page.language %}
-                    <a href="/{{ language }}{{ page.url | remove_first:lang_path }}"><img class="lang-sel-img" src="{{ page.base_dir }}images/{{ lang_icon }}"/></a>
+                    <a href="/{{ language }}{{ page.url | remove_first:lang_path }}" hreflang="{{ language }}"><img class="lang-sel-img" src="{{ page.base_dir }}images/{{ lang_icon }}"/></a>
                 {% else %}
                 <img class="lang-sel-img" src="{{ page.base_dir }}images/{{ lang_icon }}"/>
                 {% endif %}
