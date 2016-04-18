@@ -7,21 +7,27 @@
     <article class="wrapper">
         <h2 class="section-headline ClearBottom">{{ press.headline }}</h2>
         <div class="section-one btn-press-unit">
-            <div class="cell">
-                <img class="btn-getpress" src="{{ page.base_dir }}images/btn/txt-pink.png">
-                <p>Download</p>
-                <div>{{ press.description }}</div>
-            </div>
-            <div class="cell">
-                <img class="btn-getpress last" src="{{ page.base_dir }}images/btn/pdf-blue.png">
-                <p>Download</p>
-                <div>Screenshots &amp; Images</div>
-            </div>
-            <div class="cell">
-                <img class="btn-getpress last" src="{{ page.base_dir }}images/btn/pressfolder.png">
-                <p>Download</p>
-                <div>{{ press.folder }}</div>
-            </div>
+            <a href="{{ press.path-txt }}">
+                <div class="cell">
+                    <img class="btn-getpress" src="{{ page.base_dir }}images/btn/txt-pink.png">
+                    <p>Download</p>
+                    <div>{{ press.description }}</div>
+                </div>
+            </a>
+            <a href="{{ press.path-img }}">
+                <div class="cell">
+                    <img class="btn-getpress last" src="{{ page.base_dir }}images/btn/pdf-blue.png">
+                    <p>Download</p>
+                    <div>Screenshots &amp; Images</div>
+                </div>
+            </a>
+            <a href="{{ press.path-kit }}">
+                <div class="cell">
+                    <img class="btn-getpress last" src="{{ page.base_dir }}images/btn/pressfolder.png">
+                    <p>Download</p>
+                    <div>{{ press.folder }}</div>
+                </div>
+            </a>
         </div>
     </article>
 
