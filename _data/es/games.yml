@@ -2,7 +2,7 @@
 
 - {
     name: "50 Lines",
-    description: "50 casillas necesitas haga clic lo más rápido que posible, para llegar a la meta.",
+    description: "Necesita que hagas clic lo mas rapido que posible a las 50 casillas, para llegar a la meta.",
     teaser: "Ponga a prueba tu reacción y destreza. Un mini juego de habilidad donde cada milisegundo esta importante",
     screenshot: "lang/es/50lines.png",
     icon: {
@@ -12,7 +12,7 @@
 }
 - {
     name: "Number Burst",
-    description: "La secuencia de números se debe buscar! Pone tu habilidades de pensamiento a la prueba y mostrar a la otra.",
+    description: "Se debe buscar la secuencia de números! Pone tu habilidades de pensamiento a la prueba y mostrar a la otra.",
     teaser: "Haga clic en la secuencia de números. Entrenar la mente es aún más divertido con Kazong BRAIN TRAINER.",
     screenshot: "lang/es/burst.png",
     icon: {
@@ -52,7 +52,7 @@
 }
 - {
     name: "Banderas Quiz",
-    description: "¿Conoce las banderas del mundo?",
+    description: "¿Conoces las banderas del mundo?",
     teaser: "Adivinar las banderas de los países del mundo. Conoce las banderas de los países exóticos tales como Belice o Sri Lanka.",
     screenshot: "lang/es/flags.png",
     icon: {
@@ -72,7 +72,7 @@
 }
 - {
     name: "MatchUP",
-    description: "El éxito en cualquier vivero. Pero cuidado, que aquí quiere que su enemigo para ser más rápido de lo que!",
+    description: "El éxito en cualquier vivero pero cuidad, aqui tu enemigo quiere ser mas rapido que tu!",
     teaser: "Revelar las tarjetas de memory y recordar las imágenes. El objetivo: como pequeños movimientos como sea necesario.",
     screenshot: "lang/es/memory.png",
     icon: {
@@ -82,7 +82,7 @@
 }
 - {
     name: "Correcto o Falso?",
-    description: "Decidir rápidamente si la afirmación es cierta o no! No siempre es fácil.",
+    description: "Decides rápidamente si la afirmación es cierta o no! No siempre es fácil.",
     teaser: "Sé rápido y decidir si la afirmación es correcto o falso! Hechos asombrosos de los más diversos temas prueba tu conocimiento general.",
     screenshot: "lang/es/truefalse.png",
     icon: {
