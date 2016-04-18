@@ -1,12 +1,15 @@
 BRAND:
+==============================
 Kazong - Play with friends
 
 
 TEASER:
+==============================
 In a 3 round challenge you play QUIZ-, MINI- & BRAIN-GAMES against your friends, family and other players.
 
 
 BASIC INFO:
+==============================
 Plattform: iOS, Android
 Release Date: April 2016
 Availability: Worldwide in 5 languages
@@ -15,6 +18,7 @@ Targets: 45% Men & 55% Wmoen, 12-45 Years
 
 
 FEATURES:
+==============================
 Gaming Platform with currently +10 Games, constantly new games
 +12.000 quiz-questions out of various categories
 Singleplayer Mode
@@ -24,11 +28,13 @@ Create your own quiz questions
 
 
 POSITIONING:
+==============================
 Kazong puts together games from the genres QIUZ,  MINI & BRAIN to create a thrilling challenge between 2 players. For the first time you get the chance to challenge your knowledge, combinations skills & dexterity within one challenge! 
 
 
-GAMES:
 
+GAMES:
+==============================
 Quiz (Genre: Kazong-Quiz-Game)
 ------------------------------
 1 Question und 4 Answers. Politics, Movies, Geography … and more Categories to play against your friend. 
@@ -83,5 +89,23 @@ Connect same colored dots to make a line, or connect four dots to make a square.
 -----------------------------------
 Click as fast as possible through 50 boxes. Test your reaction and finger speed. A skill-game where every second counts. WATCH OUT ... ADDICTIVE!
 
+
+
+HISTORY
+==============================
+Everything started with joking around ... while we were watching the TV show “Beat the Star” we were bragging to each other ‘I would easily beat you…’, ‘You wouldn't stand a chance…’, and so we decided to put our money where are mouths were by developing an app where we could compete in such Mini-Games. Things rapidly developed, and from there Kazong was born.
+
+
+COMPANY DETAILS
+==============================
+Company: Kazong Games UG
+Product: Kazong Multiplayer APP
+Founded: Januar 2016
+Industry: Mobile Games
+
+Facebook: kazong.games
+Twitter: kazong_game
+Web: www.kazong-games.com
+Email: contact@kazong-games.com
 
 

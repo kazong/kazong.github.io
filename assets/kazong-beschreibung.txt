@@ -1,12 +1,15 @@
 BRAND:
+==============================
 Kazong - Play with friends
 
 
 TEASER:
+==============================
 In einem 3 Runden Duell Spiel du QUIZ-, MINI- & BRAIN-GAMES mit Freunden Familie und anderen Spielern.
 
 
 ECKDATEN:
+==============================
 Plattform: iOS, Android
 Release Datum: April 2016
 Verfügbarkeit: Weltweit in 5 Sprachen
@@ -15,6 +18,7 @@ Zielgruppe: 45% Männer & 55% Frauen, 12-45 Jahre
 
 
 FEATURES:
+==============================
 Spieleplattform mit +10 Spielen, ständig neue Spiele
 Mehr als 12.000 Quizfragen aus versch. Kategorien
 Singleplayer-Modus
@@ -24,10 +28,12 @@ Eigene Quiz-Fragen einreichen
 
 
 POSITIONIERUNG:
+==============================
 Kazong kombiniert Games aus den Genres Quiz-, Brain- & Mini-Games zu einem interaktiven Duell. Zum ersten Mal bekommst du die Möglichkeit Wissen, Kombinations- &Fingerfertigkeit in einer spannenden Challenge herauszufordern.
 
 
 GAMES:
+==============================
 
 Quiz (Genre: Kazong-Quiz-Game)
 ------------------------------
@@ -82,6 +88,25 @@ Verbinde gleichfarbige Punkte! Dots verbunden zu einem Quadrat räumen das Feld 
 50Lines! (Genre: Kazong-Mini-Game)
 -----------------------------------
 50 Kästchen, die du schnellst möglich klicken musst, um ins Ziel zu kommen! WATCH OUT ... ADDICTIVE!
+
+
+
+ENTSTEHUNGSGESCHICHTE
+==============================
+Mit Spaß unter Freunden hat alles begonnen ... während wir Abends "Schlag den Raab" geschaut haben und lautstark angegeben wurde "ich würde dich in der Disziplen locker schlagen" oder "Pff ... da hättest du gar keine Chance!" kam die Idee auf: "Lass mal ne App entwickeln in der wir solche Spiele gegeneinander zocken!" Aus Spaß wurde ernst, "Ernst" ist jetzt ein Jahr alt und heißt Kazong und verlässt sein Kinderzimmer, um mit anderen Kindern zu spielen!"
+
+
+UNTERNEHMENSDATEN
+==============================
+Company: Kazong Games UG
+Product: Kazong Multiplayer APP
+Founded: Januar 2016
+Industry: Mobile Games
+
+Facebook: kazong.games
+Twitter: kazong_game
+Web: www.kazong-games.com
+Email: contact@kazong-games.com
 
 
 
