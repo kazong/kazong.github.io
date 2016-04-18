@@ -2,8 +2,8 @@ name: Stampa
 headline: KAZONG PRESSKIT
 description: Descrizione del prodotto
 folder: cartella stampa completa
-path-txt: assets/kazong-description.txt
-path-img: assets/kazong-images_en.rar
-path-kit: assets/kazong-pressfolder_en.rar
+path-txt: ../assets/kazong-description.txt
+path-img: ../assets/kazong-images_en.rar
+path-kit: ../assets/kazong-pressfolder_en.rar
 publication:
   headline: Comunicati stampa

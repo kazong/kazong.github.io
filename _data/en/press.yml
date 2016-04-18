@@ -2,8 +2,8 @@ name: Presse
 headline: KAZONG PRESSKIT
 description: Product Desciption
 folder: Full Pressfolder
-path-txt: assets/kazong-description.txt
-path-img: assets/kazong-images_en.rar
-path-kit: assets/kazong-pressfolder_en.rar
+path-txt: ../assets/kazong-description.txt
+path-img: ../assets/kazong-images_en.rar
+path-kit: ../assets/kazong-pressfolder_en.rar
 publication:
   headline: Pressemitteilungen
