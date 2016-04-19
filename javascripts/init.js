@@ -49,8 +49,11 @@ function initGamesSlider() {
 };
 // enable shariff social-sharing plugin
 function initShariff() {
-
-
+    new Shariff($('.shariff').first(), {
+        orientation: "vertical",
+        services: ["facebook", "twitter", "googleplus"],
+        infoUrl: "http://www.example.com"
+    });
 };
 // register contact-form handler
 function initContactForm() {
