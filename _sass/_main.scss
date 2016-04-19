@@ -13,6 +13,7 @@
 .text-left { text-align: left }
 .text-right { text-align: right }
 .text-center { text-align: center }
+.text-justify { text-align: justify }
 .ClearBottom { padding-bottom: 0px !important; }
 .bold { font-weight: bold; }
 
@@ -28,7 +29,7 @@
 * {
     font-family: 'Lato', sans-serif;
     font-weight: 300;
-    text-shadow: 1px 1px 1px #000;
+//    text-shadow: 1px 1px 1px #000;
 }
 
 html {
@@ -164,6 +165,8 @@ body { background-color: #fff; color: #fff; margin: 0; }
     width: 100%; height: 100%;
 }
 
+.content-unit { margin: auto; }
+
 .unit {
     background-color: #34293a;
     border-bottom: 2px solid #1e1923;
@@ -281,9 +284,14 @@ body { background-color: #fff; color: #fff; margin: 0; }
     background-size: cover;
 }
 
-.section-headline.border-top { border-top: 2px solid #34293a }
+.section-headline.border-top { border-top: 2px solid #34293a; }
 
-.btn-press-unit { display: table; text-align: center; margin: auto; }
+.btn-press-unit {
+    display: table;
+    margin: auto;
+    padding-bottom: 15vh !important; //temporary-fix
+    text-align: center;
+}
 .btn-press-unit p { text-shadow: none; }
 .btn-press-unit div { font-weight: bold; }
 .release-unit {
@@ -354,10 +362,14 @@ body { background-color: #fff; color: #fff; margin: 0; }
 
 /* RESPONSIVE */
 .mobile { display: none }
-.wrapper { position: relative; margin: 0 auto; width: 1180px; padding-left: 0px; }
 
 
 /* CONTENT */
+
+.wrapper { position: relative; margin: 0 auto; width: 1180px; padding-left: 0px; }
+
+.content-unit.md { width: 70%; }
+
 .header-unit { padding: 25px 0;}
 .header-logo {
     height: 65px;
@@ -800,6 +812,8 @@ body { background-color: #fff; color: #fff; margin: 0; }
 .section4-mobile { padding: 10px 0 25px 0; }
 .section-one  { padding: 20px 0 0 0; text-align: center; }
 .section-textbox { vertical-align: top; width: 100%; text-align: center;}
+.section-textbox.right { display: block; }
+.mobilescreens { display: inline }
 .section-txt { vertical-align: top; text-shadow: 1px 1px 3px #000;}
 
 .section1-headline { font-size: 20px; font-weight: bold; padding-top: 20px;}
@@ -881,7 +895,11 @@ textarea:-ms-input-placeholder { font-size: 10px }
 
 
 /* PRESS */
-.btn-press-unit { width: 90%; padding: 25px 0; }
+.btn-press-unit {
+    width: 90%;
+    padding: 25px 0;
+    padding-bottom: 10vh !important; //tempoary-fix
+}
 .btn-getpress { width: 125px; }
 .btn-press-unit div { font-size: 13px; padding-top: 5px; }
 
@@ -1152,5 +1170,3 @@ textarea:-ms-input-placeholder { font-size: 10px }
 /* Portrait */
 @media only screen and (max-device-width: 320px) and (max-device-height: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
 }
-
-
