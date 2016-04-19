@@ -79,6 +79,22 @@ textarea { resize: none; margin-bottom: 15px; padding: 10px 0;}
     opacity: 1;
 }
 
+.social-media-sharing {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 115px;
+    overflow: hidden;
+
+    &.shariff {
+        .orientation-horizontal {
+            > li {
+                margin-bottom: 0;
+                width: 100%;
+            }
+        }
+    }
+}
 
 /*-----------------------------------------------------------------------------------*/
 /*  POPUP
