@@ -1,6 +1,7 @@
 name: Presse
 initial: Kazong Pressemitteilungen
-headline: KAZONG PRESSKIT
+headline: Kazong Presskit
+team: Kazong Team
 description: Produkt Beschreibung
 folder: Komplette Pressemappe
 path-txt: ../assets/kazong-beschreibung.txt
