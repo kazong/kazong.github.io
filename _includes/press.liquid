@@ -4,7 +4,7 @@
 <section class="hero-unit unit">
     <article class="wrapper">
         <h2 class="section-headline ClearBottom">{{ press.headline }}</h2>
-        <div class="section-one btn-press-unit">
+        <div class="section-one btn-press-unit transparent">
             <a class="cell" href="{{ press.path-txt }}" download >
                 <img class="btn-getpress" src="{{ page.base_dir }}images/btn/txt-pink.png">
                 <p>Download</p>
@@ -24,7 +24,7 @@
         <!--p>For further information don´t hesitate to contact us! </p-->
     </article>
 
-    <!--article class="wrapper">
+    <article class="wrapper">
         <h3 class="section-headline md">{{ press.publication.headline }}</h3>
         <ul class="press-publications">
         {% for release in posts %}
@@ -33,5 +33,5 @@
             </li>
         {% endfor %}
         </ul>
-    </article-->
+    </article>
 </section>

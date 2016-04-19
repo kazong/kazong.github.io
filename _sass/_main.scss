@@ -312,6 +312,10 @@ body { background-color: #fff; color: #fff; margin: 0; }
     text-align: center;
     border-radius: 15px;
     background-color: #34293a;
+
+    &.transparent {
+        background: none;
+    }
 }
 .btn-press-unit p { text-shadow: none; }
 .btn-press-unit div { font-weight: bold; }
