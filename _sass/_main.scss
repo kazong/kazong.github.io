@@ -96,6 +96,8 @@ textarea { resize: none; margin-bottom: 15px; padding: 10px 0;}
     }
 }
 
+
+
 /*-----------------------------------------------------------------------------------*/
 /*  POPUP
 /*-----------------------------------------------------------------------------------*/
@@ -819,6 +821,19 @@ body { background-color: #fff; color: #fff; margin: 0; }
 .imprint { padding: 30px 0 15px 0 }
 .imprint a, p { font-size: 15px }
 
+.social-media-sharing {
+    position: relative;
+    width: 100%;
+
+    &.shariff {
+        .orientation-horizontal {
+            > li {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
 }
 
 /* All Mobile Sizes (devices and browser) */
@@ -986,6 +1001,19 @@ textarea:-ms-input-placeholder { font-size: 10px }
 .imprint { padding: 20px 0 10px 0 }
 .imprint a, p { font-size: 11px }
 
+.social-media-sharing {
+    position: relative;
+    width: 100%;
+
+    &.shariff {
+        .orientation-horizontal {
+            > li {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
 }
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 @media only screen and (min-width: 480px) and (max-width: 540px) and (orientation: landscape) {}
@@ -1012,6 +1040,19 @@ textarea:-ms-input-placeholder { font-size: 10px }
 .release-title { font-size: 12px; }
 .release-date { font-size: 12px; }
 .icon { width: 25px; }
+
+.social-media-sharing {
+    position: relative;
+    width: 100%;
+
+    &.shariff {
+        .orientation-horizontal {
+            > li {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
 
 }
 
@@ -1155,6 +1196,19 @@ textarea:-ms-input-placeholder { font-size: 10px }
 .imprint { padding: 20px 0 10px 0 }
 .imprint a, p { font-size: 10px }
 .imprint-unfold { width: 410px }
+
+.social-media-sharing {
+    position: relative;
+    width: 100%;
+
+    &.shariff {
+        .orientation-horizontal {
+            > li {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
 
 }
 @media (min-width: 300px) and (max-width: 367px) {
