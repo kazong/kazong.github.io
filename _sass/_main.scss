@@ -969,9 +969,6 @@ textarea:-moz-placeholder { font-size: 10px }
 textarea::-moz-placeholder { font-size: 10px }
 textarea:-ms-input-placeholder { font-size: 10px }
 
-.submit-btn { width: 90px !important; height: 25px !important; padding: 0px !important}
-
-
 /* PRESS */
 
 .content-unit.lg { width: 90%; }
@@ -1036,6 +1033,47 @@ textarea:-ms-input-placeholder { font-size: 10px }
 
         .image-box {
             display: inline-block;
+        }
+    }
+}
+
+.contact-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    font-size: 17px;
+
+    .contact-txt {
+        margin: 0 auto 20px auto;
+        width: 72%;
+        p {
+            font-size: 17px;
+        }
+    }
+    .contact-form {
+        margin: 0 auto;
+        width: 100%;
+
+        #contactform {
+            input,
+            textarea {
+                width: 100%;
+                margin-bottom: 0;
+                padding: 5px 0;
+
+                &::-webkit-input-placeholder {
+                    color: #453a4b;
+                    font-size: 15px;
+                }
+            }
+            input {
+                height: 30px;
+            }
+            input[type='submit'] {
+                width: 100%;
+                display: block;
+                color: #453a4b;
+                font-size: 17px;
+            }
         }
     }
 }
