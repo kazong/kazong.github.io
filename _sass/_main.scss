@@ -96,6 +96,11 @@ textarea { resize: none; margin-bottom: 15px; padding: 10px 0;}
     }
 }
 
+.challenge-wrapper {
+    .image-box {
+        display: inline-block;
+    }
+}
 
 
 /*-----------------------------------------------------------------------------------*/
@@ -1012,6 +1017,25 @@ textarea:-ms-input-placeholder { font-size: 10px }
                 margin-bottom: 0;
                 margin-top: 0;
             }
+        }
+    }
+}
+
+.challenge-section {
+    .section-headline {
+        padding-bottom: 0;
+    }
+    .challenge-wrapper {
+        display: flex;
+        flex-direction: column-reverse;
+        padding-top: 0;
+
+        .sub-features {
+            margin: 20px auto;
+        }
+
+        .image-box {
+            display: inline-block;
         }
     }
 }
