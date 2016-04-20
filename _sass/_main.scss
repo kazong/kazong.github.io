@@ -87,10 +87,10 @@ textarea { resize: none; margin-bottom: 15px; padding: 10px 0;}
     overflow: hidden;
 
     &.shariff {
-        .orientation-horizontal {
+        .orientation-vertical {
             > li {
                 margin-bottom: 0;
-                width: 100%;
+                margin-top: 0;
             }
         }
     }
@@ -829,6 +829,7 @@ body { background-color: #fff; color: #fff; margin: 0; }
         .orientation-horizontal {
             > li {
                 margin-bottom: 0;
+                margin-top: 0;
             }
         }
     }
@@ -1009,6 +1010,7 @@ textarea:-ms-input-placeholder { font-size: 10px }
         .orientation-horizontal {
             > li {
                 margin-bottom: 0;
+                margin-top: 0;
             }
         }
     }
@@ -1049,6 +1051,7 @@ textarea:-ms-input-placeholder { font-size: 10px }
         .orientation-horizontal {
             > li {
                 margin-bottom: 0;
+                margin-top: 0;
             }
         }
     }
@@ -1205,6 +1208,7 @@ textarea:-ms-input-placeholder { font-size: 10px }
         .orientation-horizontal {
             > li {
                 margin-bottom: 0;
+                margin-top: 0;
             }
         }
     }
