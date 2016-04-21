@@ -7,5 +7,7 @@ folder: Komplette Pressemappe
 path-txt: ../assets/kazong-beschreibung.txt
 path-img: ../assets/kazong-images_de.rar
 path-kit: ../assets/kazong-pressfolder_de.rar
+media: Kazong Presselinks
 publication:
   headline: Pressemitteilungen
+

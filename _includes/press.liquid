@@ -34,4 +34,14 @@
         {% endfor %}
         </ul>
     </article>
+
+    <article class="wrapper">
+        <h3 class="section-headline md">{{ press.media }}</h3>
+        <ul class="press-publications">
+            <li class="release-item">
+                {% include coverage-item.liquid %}
+            </li>
+        </ul>
+    </article>
+
 </section>

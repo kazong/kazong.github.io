@@ -17,7 +17,7 @@ challengeunit:
   - "Enviar preguntas"
   - "Estadísticas"
 
-games_label: Spiele
+games_label: Juega
 screenshots:
   main:
     path: "lang/es/main.png"

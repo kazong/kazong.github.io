@@ -6,5 +6,6 @@ folder: Dosier de prensa completa
 path-txt: ../assets/kazong-description.txt
 path-img: ../assets/kazong-images_en.rar
 path-kit: ../assets/kazong-pressfolder_en.rar
+media: Kazong in the Media
 publication:
   headline: Comunicado de prensa

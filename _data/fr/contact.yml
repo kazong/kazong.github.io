@@ -1,12 +1,12 @@
 headline: Kontakt
-teaser: Das Kazong-Team kümmert sich gerne um die Anliegen der Community!
+teaser: L'équipe Kazong est désireux de servir les intérêts de la Communauté!
 company: Berlin, Germany
 form:
-  name: Name
+  name: Nom
   email: Email
-  comment: Kommentar
-  submit: Abschicken
+  comment: Commentaire
+  submit: Envoyer
   success:
-    thx: Dankeschön!
-    text: Deine E-Mail ist soeben bei uns eingeflogen <br>&amp; es wird sich sofort um dich gekümmern!
+    thx: Je vous remercie!
+    text: Ta email vient d'arriver <br>&amp; et nous va immédiatement prendre soin de toi!
     footer: Kazong Games - Enjoy playing

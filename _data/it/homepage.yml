@@ -17,7 +17,7 @@ challengeunit:
   - "Propri quesiti"
   - "Statistica"
 
-games_label: Spiele
+games_label: Gioco
 screenshots:
   main:
     path: "lang/it/main.png"

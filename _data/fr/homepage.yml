@@ -17,7 +17,7 @@ challengeunit:
   - "Propres questions"
   - "Statistiques joueurs"
 
-games_label: Spiele
+games_label: Jeux
 screenshots:
   main:
     path: "lang/fr/main.png"

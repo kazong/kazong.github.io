@@ -1,7 +1,7 @@
 {% assign imprint = site.data[page.language].imprint %}
 {% assign press_page = site.data[page.language].press %}
 
-<footer class="bg-responsive2">
+<footer class="bg-purple">
     <div class="wrapper imprint text-center">
         <a class="fold-imprint">{{ imprint.name }}</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/{{ page.language }}/press.html" hreflang="{{ page.language }}">{{ press_page.name }}</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a rel="alternate" type="application/rss+xml" href="/{{ page.language }}/rss.xml" hreflang="{{ page.language }}">RSS</a>
         <p class="centered">{{ imprint.copyright }}</p>
