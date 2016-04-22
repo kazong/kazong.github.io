@@ -1,49 +1,8 @@
 ---
-layout: null
+layout: redirect
 language: en
 title: Kazong - Play with friends
 description: Kazong Game | Quiz, Mini, Brain-Game Multiplayer APP!
 author: Kazong Games
 base_dir: ./
 ---
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="author" content="Kazong Games" />
-    <meta name="description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
-    <meta http-equiv="cache-control" content="public" />
-
-    <meta property="og:url" content="https://kazong-game.com/de/" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Quiz-, Mini-, Brain-Game Multiplayer APP" />
-    <meta property="og:description" content="Challenge your friends in a 3 round match of different games" />
-    <meta property="og:image" content="///kazong-game.com/img/fb/msg-img3.png" />
-
-    <link rel="icon" type="image/ico" href="/{{ page.base_dir }}images/fav-ico.ico" />
-    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}" />
-
-    <script type="text/javascript">
-    var supportedLangs = [ 'de', 'es', 'it', 'en', 'fr' ];
-    var defaultLang = 'en';
-    var browserLang = navigator.language || navigator.userLanguage;
-    var langParts = browserLang.split('-');
-    var shortLang = defaultLang;
-    if (langParts.length > 0) {
-        shortLang = langParts[0];
-        if (false === supportedLangs.indexOf(shortLang)) {
-            shortLang = defaultLang;
-        }
-    }
-    window.location.href = '/' + shortLang + '/';
-    </script>
-</head>
-
-<a href="/de/" hreflang="de">Kazong-Game (de)</a>
-<a href="/en/" hreflang="en">Kazong-Game (en)</a>
-<a href="/es/" hreflang="es">Kazong-Game (es)</a>
-<a href="/fr/" hreflang="fr">Kazong-Game (fr)</a>
-<a href="/it/" hreflang="it">Kazong-Game (it)</a>

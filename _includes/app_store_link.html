@@ -1,0 +1,10 @@
+<script src="{{ page.base_dir }}javascripts/mobile-detect.min.js"></script>
+<script>
+    var md = new MobileDetect(window.navigator.userAgent);
+    if (md.os () === 'AndroidOS') {
+        // window.location = 'market://details?id=com.mojang.minecraftpe';
+        window.location = 'https://play.google.com/store/apps/details?id=com.kazong.game';
+    } else if (md.os() === 'iOS') {
+        window.location = 'https://itunes.apple.com/us/app/kazong/id1082430396?ls=1&mt=8';
+    }
+</script>
