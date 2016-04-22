@@ -1,8 +1,8 @@
 ---
 layout: null
 language: en
-title: Kazong - Play with Friends
-description: Kazong Game | Quiz, Mini, Brain-Game Multiplayer APP!
+title: Kazong Game | Press and News
+description: Stay up to date with the latest news on whats going in the Kazong Universe.
 author: Kazong Games
 ---
 {% include rss_feed.xml %}
