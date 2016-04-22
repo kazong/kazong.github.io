@@ -10,20 +10,5 @@
 	<meta property="og:description" content="1 Duell - 3 Runden - 3 Games (Quiz|Mini|Brain)" />
 	<meta property="og:image" content="https://kazong-game.com/images/corporate/icons/icon-250_rounded.png" />
 </head>
-<body>
-	<script src="mobile-detect.min.js"></script>
-	<script>
-		var md = new MobileDetect ( window.navigator.userAgent );
-		if ( md.os () === 'AndroidOS' ) {
-			// window.location = 'market://details?id=com.mojang.minecraftpe';
-			window.location = 'https://play.google.com/store/apps/details?id=com.kazong.game';
 
-		} else if ( md.os () === 'iOS' ) {
-			window.location = 'https://itunes.apple.com/us/app/kazong/id1082430396?ls=1&mt=8';
-
-		} else {
-			window.location = 'https://kazong-game.com';
-		} // Endif.
-	</script>
-</body>
-</html>
+{% include app_store_link.html %}
