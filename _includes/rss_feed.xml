@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/css" href="{{ site.url }}/main.css" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   {% assign posts=site.posts | where:"language", page.language %}
   <channel>
-    <language>{{ page.language }}</language>
+    <language>{{ page.language }}/images/corporate/logo_white.png</language>
     <title>{{ site.name | xml_escape }}</title>
     <description>{{ site.description | xml_escape }}</description>
     <link>{{ site.url }}</link>
     <atom:link href="{{ site.url }}/{{ page.language }}/rss.xml" rel="self" type="application/rss+xml" />
+    <image>
+      <url>{{ site.url }}/images/</url>
+      <title>{{ site.title }}</title>
+      <link>{{ site.url }}</link>
+      <width>111</width>
+      <height>32</height>
+      <description>{{ site.description }}</description>
+    </image>
     {% for post in posts %}
       <item>
         <title>{{ post.title | xml_escape }}</title>
