@@ -93,4 +93,5 @@ $(document).ready(function() {
     initShariff();
     initGamesSlider();
     initContactForm();
+    initGoogleAnalytics();
 });
