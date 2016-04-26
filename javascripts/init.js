@@ -80,7 +80,6 @@ function initContactForm() {
 }
 function initGoogleAnalytics() {
     $('#playstore-download-btn').click(function(event) {
-        console.log(event.target.href);
         ga('send', 'event', {
             eventCategory: 'goToStore',
             eventAction: 'click',
@@ -89,6 +88,7 @@ function initGoogleAnalytics() {
         });
     });
     $('#appstore-download-btn').click(function(event) {
+        console.log(event.target.href);
         ga('send', 'event', {
             eventCategory: 'goToStore',
             eventAction: 'click',
