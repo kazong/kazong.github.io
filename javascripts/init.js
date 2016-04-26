@@ -83,16 +83,17 @@ function initGoogleAnalytics() {
         ga('send', 'event', {
             eventCategory: 'goToStore',
             eventAction: 'click',
-            eventLabel: $(this).attr('href'),
+            eventLabel: event.currentTarget.href,
             transport: 'beacon'
         });
+        return false;
     });
     $('#appstore-download-btn').click(function(event) {
-        console.log($(this).attr('href'));
+        console.log(event.currentTarget.href);
         ga('send', 'event', {
             eventCategory: 'goToStore',
             eventAction: 'click',
-            eventLabel: $(this).attr('href'),
+            eventLabel: event.currentTarget.href,
             transport: 'beacon'
         });
     });
