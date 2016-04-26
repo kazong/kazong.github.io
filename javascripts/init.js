@@ -80,7 +80,11 @@ function initContactForm() {
 }
 function initGoogleAnalytics() {
     $('#playstore-download-btn').click(function() {
-        ga('send', 'event', 'Conversion', 'goToStore', 'Mainpage');
+        ga('send', {
+          hitType: 'event',
+          eventCategory: 'Conversion',
+          eventAction: 'goToStore',
+          eventLabel: 'Mainpage'
     });
     $('#appstore-download-btn').click(function() {
         ga('send', 'event', 'Conversion', 'goToStore', 'Mainpage');
