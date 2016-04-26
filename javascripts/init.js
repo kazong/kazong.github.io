@@ -80,20 +80,19 @@ function initContactForm() {
 }
 function initGoogleAnalytics() {
     $('#playstore-download-btn').click(function(event) {
-        console.log(this.target.href);
         ga('send', 'event', {
             eventCategory: 'goToStore',
             eventAction: 'click',
-            eventLabel: this.target.href,
+            eventLabel: $(this).attr('href'),
             transport: 'beacon'
         });
     });
     $('#appstore-download-btn').click(function(event) {
-        console.log(this.target.href);
+        console.log($(this).attr('href'));
         ga('send', 'event', {
             eventCategory: 'goToStore',
             eventAction: 'click',
-            eventLabel: this.target.href,
+            eventLabel: $(this).attr('href'),
             transport: 'beacon'
         });
     });
