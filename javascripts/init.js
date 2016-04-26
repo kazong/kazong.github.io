@@ -78,6 +78,14 @@ function initContactForm() {
         });
     });
 }
+function initGoogleAnalytics() {
+    $('#playstore-download-btn').click(function() {
+        ga('send', 'event', 'Conversion', 'goToStore', 'Mainpage');
+    });
+    $('#appstore-download-btn').click(function() {
+        ga('send', 'event', 'Conversion', 'goToStore', 'Mainpage');
+    });
+}
 // init all te thingz
 $(document).ready(function() {
     doTheImprintHidingThing();
