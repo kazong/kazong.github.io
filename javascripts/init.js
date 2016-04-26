@@ -79,15 +79,21 @@ function initContactForm() {
     });
 }
 function initGoogleAnalytics() {
-    $('#playstore-download-btn').click(function() {
-        ga('send', {
-          hitType: 'event',
-          eventCategory: 'Conversion',
-          eventAction: 'goToStore',
-          eventLabel: 'Mainpage'
+    $('#playstore-download-btn').click(function(event) {
+        ga('send', 'event', {
+            eventCategory: 'goToStore',
+            eventAction: 'click',
+            eventLabel: event.target.href,
+            transport: 'beacon'
+        });
     });
-    $('#appstore-download-btn').click(function() {
-        ga('send', 'event', 'Conversion', 'goToStore', 'Mainpage');
+    $('#appstore-download-btn').click(function(event) {
+        ga('send', 'event', {
+            eventCategory: 'goToStore',
+            eventAction: 'click',
+            eventLabel: event.target.href,
+            transport: 'beacon'
+        });
     });
 }
 // init all te thingz
