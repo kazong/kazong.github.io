@@ -79,22 +79,15 @@ function initContactForm() {
     });
 }
 function initGoogleAnalytics() {
-    $('#playstore-download-btn').click(function(event) {
-        ga('send', 'event', {
-            eventCategory: 'goToStore',
-            eventAction: 'click',
-            eventLabel: event.currentTarget.href,
-            transport: 'beacon'
-        });
-        return false;
-    });
-    $('#appstore-download-btn').click(function(event) {
-        console.log(event.currentTarget.href);
-        ga('send', 'event', {
-            eventCategory: 'goToStore',
-            eventAction: 'click',
-            eventLabel: event.currentTarget.href,
-            transport: 'beacon'
+    $('a[data-category]').each(function(idx, outbound_link) {
+        $link = $(outbound_link);
+        $link.click(function(event) {
+            ga('send', 'event', {
+                eventCategory: $link.data('category'),
+                eventAction: 'click',
+                eventLabel: $link.attr('href'),
+                transport: 'beacon'
+            });
         });
     });
 }
