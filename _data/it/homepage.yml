@@ -1,23 +1,23 @@
 herounit:
-  headline: "Giocare Quiz-, Mini and Brain-Games contro i tuoi amici."
-  kicker: "Download e sfida i tuoi amici!"
+  headline: "Giochi, quiz, esercizi mentali per sfidare i tuoi amici."
+  kicker: "Scarica Kazong dal tuo App Store e sfida i tuoi amici!"
   download_labels:
-    ios: "Download in App Store"
-    android: "Download in Google Play"
+    ios: "Scarica dall'App Store"
+    android: "Scarica dall' Google Play"
 
 challengeunit:
   titel: "Modalità sfida"
-  headline: "Selezionare i giochi di diverse categorie di Quiz-, Brain- und Mini-Games"
-  kicker: "1 Sfida. . . 3 Turno. . . 3 Gioco!"
+  headline: "Sfide di ogni tipo con i tuoi amici e altri giocatori"
+  kicker: "1 Sfida. . . 3 Round. . . 3 Games!"
   features:
-  - "+10 Gioco"
+  - "+10 Games"
   - "+12.000 Domande del quiz"
   - "Chat"
-  - "Giocatore singolo"
-  - "Propri quesiti"
-  - "Statistica"
+  - "Giocatore unico"
+  - "Crea domanda"
+  - "Statistiche giocatore"
 
-games_label: Gioco
+games_label: Games
 screenshots:
   main:
     path: "lang/it/main.png"
