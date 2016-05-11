@@ -2,7 +2,7 @@ name: Stampa
 initial: Kazong Press Release
 headline: KAZONG PRESSKIT
 description: Descrizione del prodotto
-folder: cartella stampa completa
+folder: Cartella stampa completa
 path-txt: ../assets/kazong-description.txt
 path-img: ../assets/kazong-images_en.rar
 path-kit: ../assets/kazong-pressfolder_en.rar
