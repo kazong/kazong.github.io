@@ -102,7 +102,6 @@ textarea { resize: none; margin-bottom: 15px; padding: 10px 0;}
     }
 }
 
-
 /*-----------------------------------------------------------------------------------*/
 /*  POPUP
 /*-----------------------------------------------------------------------------------*/
@@ -155,6 +154,42 @@ textarea { resize: none; margin-bottom: 15px; padding: 10px 0;}
     color: rgba(255,255,255,.5);
 }
 
+
+/*-----------------------------------------------------------------------------------*/
+/*  HEADER + NAV
+/*-----------------------------------------------------------------------------------*/
+
+.page-nav {
+    width: 100%;
+    text-align: center;
+    background-color: rgba(255,255,255,.05);
+    border-bottom: 1px solid rgba(30,25,35,.4);
+    ul {
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        margin: 0 auto;
+        padding: 0;
+    }
+    li {
+        list-style: none;
+        flex-grow: 1;
+        text-align: center;
+        padding: 15px 0;
+        text-transform: uppercase;
+        text-shadow: none;
+        font-weight: bold;
+        color: #34293a;
+    }
+    a {
+        display: block;
+        font-weight: bold;
+        color: #34293a;
+    }
+    a:hover { color: #873caf; }
+}
+
+
 /*-----------------------------------------------------------------------------------*/
 /*  HOMEPAGE STYLES
 /*-----------------------------------------------------------------------------------*/
@@ -163,9 +198,14 @@ textarea { resize: none; margin-bottom: 15px; padding: 10px 0;}
 a { font-style: normal; text-decoration: none; color: #fff; }
 a:hover { cursor: pointer !important; }
 h1 { font-size: 30px; }
-body { background-color: #fff; color: #fff; margin: 0; }
+body { background-color: #453a4b; color: #fff; margin: 0; }
 
-.wrapper { padding-left: 10px; padding-right: 10px; text-align: center }
+.wrapper {
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center
+}
+.wrapper.txt-left { text-align: left; }
 
 .exclusive-th {
     margin-top: 5vh;
@@ -196,12 +236,12 @@ body { background-color: #fff; color: #fff; margin: 0; }
 .content-unit { margin: auto; }
 
 .unit {
-    background-color: #34293a;
     border-bottom: 2px solid #1e1923;
 }
 
 .header-unit {
     position: relative;
+    background-color: #34293a;
 
     .brandheader {
         position: absolute;
@@ -227,6 +267,7 @@ body { background-color: #fff; color: #fff; margin: 0; }
 .hero-unit {
     position: relative;
     background-color: #453a4b;
+    overflow: hidden;
 }
 
 .section-headline {
@@ -245,6 +286,10 @@ body { background-color: #fff; color: #fff; margin: 0; }
     width: 85%;
     margin-left: auto;
     padding-left: 0px;
+    &.left {
+        margin-left: 0;
+        margin-right: auto;
+    }
     .sub-feature-item {
         display: inline-block;
         padding: 10px 15px;
@@ -316,6 +361,8 @@ body { background-color: #fff; color: #fff; margin: 0; }
 
 .section-headline.border-top { border-top: 2px solid #34293a; }
 
+// PRESS SECTION
+//////////////////
 
 .press-wrapper {
     padding: 20px;
@@ -371,6 +418,84 @@ body { background-color: #fff; color: #fff; margin: 0; }
 }
 
 
+// EVENT SECTION
+//////////////////
+
+.event-unit {
+    position: relative;
+    background-color: #453a4b;
+    overflow: hidden;
+    .event-wallpaper {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+    }
+    .section-textbox {
+        position: relative;
+        width: 100%;
+        text-align: center;
+        .event-headline {
+            text-shadow: 2px 2px 3px #000;
+            font-weight: bold;
+        }
+        .section1-sub {
+            background-image: url('../images/event/em2016/field.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-color: rgba(0,0,0,0.4);
+            border: 2px solid rgba(255,255,255,.5);
+            .prize-intro {
+                .intro {
+                    color: #2ecc71;
+                    font-weight: bold;
+                    text-shadow: 2px 2px 3px #000;
+                }
+                .prize {
+                    display: table;
+                    table-layout: fixed;
+                    width: 100%;
+                    .prize-item { display: table-cell; }
+                    .prize-title { font-weight: bold }
+                }
+            }
+        }
+        .download-btn-container {
+            display: table;
+            border: 2px dashed rgba(255,255,255,.5);
+            background-color: rgba(0,0,0,0.4);
+            .goToStore-txt, .goToStore-btn {
+                display: table-cell;
+                vertical-align: middle;
+            }
+            .goToStore-txt {
+                font-weight: bold;
+                text-align: left;
+                .playnow {
+                    color: #2ecc71;
+                    font-weight: bold;
+                }
+                .code-intro {  }
+                .code {
+                    display: inline-block;
+                    border: 2px dashed #fff;
+                }
+            }
+        }
+    }
+}
+
+
+.event-descr {
+    .duration {
+        color: #873CAF;
+        text-transform: uppercase;
+    }
+    .challenge-wrapper.second {
+        flex-direction: column;
+    }
+}
+
 /*-----------------------------------------------------------------------------------*/
 /*  END HOMEPAGE STYLES
 /*-----------------------------------------------------------------------------------*/
@@ -378,6 +503,7 @@ body { background-color: #fff; color: #fff; margin: 0; }
 /*-----------------------------------------------------------------------------------*/
 /*  FOOTER STYLES
 /*-----------------------------------------------------------------------------------*/
+
 .contact-form {
     display: inline-block;
     text-align: center;
@@ -385,6 +511,12 @@ body { background-color: #fff; color: #fff; margin: 0; }
 .contact-txt { display: inline-block }
 
 .contact { padding-top: 0px }
+.submit-btn {
+    width: 250px;
+    font-size: 13px;
+    padding: 10px 0;
+    float: left;
+}
 #success-contact { display: none; }
 .imprint a { cursor: pointer; cursor: hand }
 .imprint-unfold { text-align: left !important; padding-bottom: 20px }
@@ -396,6 +528,7 @@ body { background-color: #fff; color: #fff; margin: 0; }
 /*-----------------------------------------------------------------------------------*/
 /*  RESPONSIVE STYLES
 /*-----------------------------------------------------------------------------------*/
+
 
 @media only screen and (min-width: 1180px) and (orientation: landscape) {
 
@@ -423,10 +556,14 @@ body { background-color: #fff; color: #fff; margin: 0; }
 
 .wrapper { position: relative; margin: 0 auto; width: 1180px; padding-left: 0px; }
 
-.header-unit { padding: 25px 0;}
+.header-unit {
+    padding: 25px 0;
+    &.sm { padding: 10px 0 6px 0; }
+}
 .header-logo {
     height: 65px;
     text-align: left;
+    &.sm { height: 35px; }
 }
 
 .lang-links { position: absolute; right: 3.5%; top: 0; }
@@ -507,7 +644,6 @@ body { background-color: #fff; color: #fff; margin: 0; }
 .contact-txt p { font-size: 20px; }
 .contact-txt h1 { margin-bottom: 20px; }
 .company-txt { margin-bottom: 30px; }
-.submit-btn { width: 200px !important; }
 
 
 /* PRESS */
@@ -534,6 +670,82 @@ body { background-color: #fff; color: #fff; margin: 0; }
 .release-msg { padding-left: 10px; }
 .icon { width: 35px; }
 
+
+/* EVENT SECTION */
+.event-unit {
+    height: 600px;
+    .section-textbox {
+        margin-top: 30px;
+        .event-headline { font-size: 37px; }
+        .section1-sub {
+            width: 1050px;
+            margin: 25px auto 0 auto;
+            padding: 20px 0;
+            font-size: 18px;
+            .prize-intro {
+                .intro {
+                    margin-bottom: 50px;
+                    font-size: 30px;
+                }
+                .prize {
+                    .prize-img.first { width: 190px; }
+                    .prize-img.second { width: 150px; }
+                    .prize-img.third { width: 150px; }
+                    .prize-title { margin-top: 20px; }
+                }
+            }
+        }
+        .download-btn-container {
+            width: 1050px;
+            margin: 50px auto 0 auto;
+            padding: 10px 0;
+            .goToStore-txt {
+                font-size: 24px;
+                padding-left: 20px;
+                .playnow { margin-bottom: 5px; }
+                .code-intro {  }
+                .code {
+                    padding: 10px;
+                    margin-left: 10px;
+                }
+            }
+            .download-btn {
+                width: 165px;
+                padding-right: 5px;
+                &.play { margin: 0 20px 0 0; };
+            }
+        }
+    }
+}
+
+.event-descr {
+    .duration {
+            font-size: 23px;
+            padding: 0 0 35px 0;
+    }
+    .challenge-wrapper {
+        padding: 25px 0 0 0;
+        .section-textbox {
+            margin-top: 0px;
+            .sub-features {
+                width: 90%;
+                margin-top: 40px;
+            }
+            .sub-feature-item {
+                font-size: 17px;
+                padding-bottom: 10px;
+            }
+        }
+    }
+    .challenge-wrapper.second {
+        padding-top: 80px;
+        .achievements {
+            margin-top: 30px;
+            .section1-sub { margin-top: 15px; }
+            .ac-th { font-size: 19px; }
+        }
+    }
+}
 
 /* helper */
 .mobile { display: none }
@@ -572,10 +784,14 @@ body { background-color: #fff; color: #fff; margin: 0; }
 
 /* CONTENT */
 
-.header-unit { padding: 15px 0; }
+.header-unit {
+    padding: 15px 0;
+    &.sm { padding: 8px 0 5px 0; }
+}
 .header-logo {
     height: 45px;
     text-align: left;
+    &.sm { height: 35px; }
 }
 
 .lang-links { position: absolute; right: 0; top: 0; }
@@ -677,6 +893,81 @@ body { background-color: #fff; color: #fff; margin: 0; }
 .icon { width: 35px; }
 
 
+
+/* EVENT SECTION */
+.event-unit {
+    height: 530px;
+    .section-textbox {
+        margin-top: 30px;
+        .event-headline { font-size: 30px; }
+        .section1-sub {
+            width: 900px;
+            margin: 25px auto 0 auto;
+            padding: 20px 0;
+            font-size: 18px;
+            .prize-intro {
+                .intro {
+                    margin-bottom: 50px;
+                    font-size: 25px;
+                }
+                .prize {
+                    .prize-img.first { width: 170px; }
+                    .prize-img.second { width: 150px; }
+                    .prize-img.third { width: 150px; }
+                    .prize-title { margin-top: 20px; }
+                }
+            }
+        }
+        .download-btn-container {
+            width: 900px;
+            margin: 35px auto 0 auto;
+            padding: 10px 0;
+            .goToStore-txt {
+                font-size: 22px;
+                padding-left: 20px;
+                .playnow { margin-bottom: 5px; }
+                .code-intro {  }
+                .code {
+                    padding: 10px;
+                    margin-left: 10px;
+                }
+            }
+            .download-btn {
+                width: 125px;
+                padding-right: 5px;
+                margin: 0;
+                &.play { margin: 0 10px 0 0; };
+            }
+        }
+    }
+}
+
+.event-descr {
+    .duration { font-size: 18px; }
+    .challenge-wrapper {
+        .main-device-img { height: 310px; }
+        .section-textbox {
+            width: 56%;
+            margin: 20px 0 0 0;
+            .section1-sub { font-size: 20px; }
+            .sub-features {
+                width: 90%;
+                margin-top: 35px;
+            }
+            .sub-feature-item {
+                font-size: 15px;
+                padding-bottom: 5px;
+            }
+            .section1-sub.left {
+                .sub-feature-item {
+                    padding: 0;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}
+
 /* helper */
 .mobile { display: none }
 
@@ -714,14 +1005,23 @@ body { background-color: #fff; color: #fff; margin: 0; }
 .section-headline { font-size: 24px; padding: 25px 0; }
 
 
-/* CONTENT */
-.header-unit { padding: 15px 0 8px 0; }
+/* Header + Nav */
+.header-unit {
+    padding: 15px 0 8px 0;
+    &.sm { padding: 10px 0 6px 0;  }
+}
 .header-logo {
     height: 45px;
     text-align: left;
+    &.sm { height: 30px; }
 }
 
 .lang-links { position: absolute; right: 0; top: 0; }
+
+.page-nav.sm li { padding: 10px 0; }
+
+
+/* CONTENT */
 
 .section-one  { padding: 40px 0 0 0;}
 .section-textbox { display: inline-block; vertical-align: top; margin-top: 20px; width: 53%; }
@@ -821,6 +1121,76 @@ body { background-color: #fff; color: #fff; margin: 0; }
 .icon { width: 35px; }
 
 
+/* EVENT SECTION */
+.event-unit {
+    height: 420px;
+    .section-textbox {
+        margin-top: 20px;
+        .event-headline { font-size: 26px; }
+        .section1-sub {
+            width: 730px;
+            margin: 15px auto 0 auto;
+            padding: 20px 0;
+            font-size: 18px;
+            .prize-intro {
+                .intro {
+                    margin-bottom: 30px;
+                    font-size: 22px;
+                }
+                .prize {
+                    .prize-img.first { width: 55%; }
+                    .prize-img.second { width: 50%; }
+                    .prize-img.third { width: 60%; }
+                    .prize-title {
+                        margin-top: 15px;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+        .download-btn-container {
+            width: 730px;
+            margin: 30px auto 0 auto;
+            padding: 10px 0;
+            .goToStore-txt {
+                text-align: center;
+                font-size: 18px;
+                padding-left: 7px;
+                .playnow { margin-bottom: 5px; }
+                .code-intro {  }
+                .code {
+                    padding: 10px;
+                    margin-left: 10px;
+                }
+            }
+            .download-btn {
+                width: 110px;
+                padding-right: 5px;
+                margin: 0;
+                &.play { margin: 0 10px 0 0; };
+            }
+        }
+    }
+}
+
+.event-descr {
+    .wrapper {
+        width: 760px;
+        .duration { font-size: 17px; }
+        .main-device-img { height: 288px; }
+        .section-textbox {
+            margin-top: 12px;
+            .sub-features { margin-top: 17px; }
+        }
+    }
+}
+.event-ac {
+    .slider-container {
+        margin-top: 20px;
+        .game-prev-img { height: 330px; }
+    }
+}
+
 /* helper */
 .mobile { display: none }
 
@@ -888,6 +1258,10 @@ body { background-color: #fff; color: #fff; margin: 0; }
     width: 200px;
     padding: 10px;
 }
+
+.page-nav.sm li { padding: 10px 0; }
+
+
 .lang-links { position: absolute; right: 0; top: -40%; }
 .lang-sel-img { width: 15px; }
 
@@ -1002,6 +1376,72 @@ textarea:-ms-input-placeholder { font-size: 10px }
 .release-date { font-size: 13px; }
 .icon { width: 30px; }
 
+
+/** EVENT SECTION **/
+.event-unit {
+    height: 375px;
+    .section-textbox {
+        margin-top: 20px;
+        .event-headline { font-size: 22px; }
+        .section1-sub {
+            width: 650px;
+            margin: 15px auto 0 auto;
+            padding: 20px 0;
+            font-size: 18px;
+            .prize-intro {
+                .intro {
+                    margin-bottom: 25px;
+                    font-size: 18px;
+                }
+                .prize {
+                    .prize-img.first { width: 50%; }
+                    .prize-img.second { width: 45%; }
+                    .prize-img.third { width: 50%; }
+                    .prize-title {
+                        margin-top: 10px;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+        .download-btn-container {
+            width: 650px;
+            margin: 30px auto 0 auto;
+            padding: 10px 0;
+            .goToStore-txt {
+                text-align: center;
+                font-size: 15px;
+                padding-left: 7px;
+                .playnow { margin-bottom: 5px; }
+                .code-intro {  }
+                .code {
+                    padding: 10px;
+                    margin-left: 10px;
+                }
+            }
+            .download-btn {
+                width: 110px;
+                padding-right: 0px;
+                margin: 0;
+                &.play { margin: 0 10px 0 0; };
+            }
+        }
+    }
+}
+
+.event-descr {
+    .duration {
+        padding: 15px 0 20px 0;
+        font-size: 15px;
+    }
+}
+
+.event-ac {
+    .slider-container {
+        margin-top: 20px;
+        .game-prev-img { height: 330px; }
+    }
+}
 
 /* IMPRINT */
 .imprint { padding: 20px 0 10px 0 }
@@ -1125,8 +1565,89 @@ textarea:-ms-input-placeholder { font-size: 10px }
     }
 }
 
+/* EVENT SECTION */
+.event-unit {
+    height: 385px;
+    .event-wallpaper {
+        width: 150%;
+        top: -7px;
+        left: -10%;
+    }
+    .section-textbox {
+        margin-top: 20px;
+        .event-headline { font-size: 22px; }
+        .section1-sub {
+            width: 95%;
+            margin: 15px auto 0 auto;
+            padding: 20px 0;
+            font-size: 14px;
+            .prize-intro {
+                .intro {
+                    margin-bottom: 25px;
+                    font-size: 15px;
+                }
+                .prize {
+/*                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    .prize-item:nth-child(1),.prize-item:nth-child(2),.prize-item:nth-child(3) {
+                        width: 100%;
+                    }
+                    .prize-img.left { height: 100px; width: auto; }
+                    .prize-img.mid { height: 100px; width: auto; }
+                    .prize-img.right { height: 100px; width: auto; }
+*/
+                    .prize-img.first { width: 50%; }
+                    .prize-img.second { width: 45%; }
+                    .prize-img.third { width: 50%; }
+                    .prize-title {
+                        margin-top: 10px;
+                        font-size: 11px;
+                        font-weight: normal;
+                    }
+                    .prize-title:nth-child(2) { font-weight: bold; }
+                }
+            }
+        }
+        .download-btn-container {
+//            display: table;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 95%;
+            margin: 20px auto 0 auto;
+            padding: 10px 0;
+            text-align: center;
+            .goToStore-txt {
+//                display: table-cell;
+//                text-align: center;
+                width: 100%;
+                //text-align: center;
+                font-size: 15px;
+                padding-left: 7px;
+                .code-intro {  }
+                .code {
+                    padding: 10px;
+                    margin-left: 10px;
+                }
+            }
+            .goToStore-btn {
+                width: 100%;
+
+                .download-btn {
+                    width: 130px;
+                    padding-right: 0px;
+                    margin: 10px 0 0 0;
+                    &.play { margin: 0 10px 0 0; };
+                }
+            }
+        }
+    }
 }
 
+
+
+}
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media (min-width: 368px) and (max-width: 480px) {
 
@@ -1262,6 +1783,97 @@ textarea:-ms-input-placeholder { font-size: 10px }
 .icon { width: 25px; }
 
 
+/* EVENT SECTION */
+.event-unit {
+    height: initial;
+    .event-wallpaper {
+        display: none;
+//        width: 159%;
+//        top: 11%;
+//        left: -44%;
+    }
+    .section-textbox {
+        margin-top: 13px;
+        .event-headline { font-size: 20px; }
+        .section1-sub {
+            background: url("../images/event/stadium1.jpeg");
+            background-size: 162%;
+            background-repeat: no-repeat;
+            background-position-x: 44%;
+            width: 99%;
+            margin: 15px auto 0 auto;
+            padding: 20px 0;
+            font-size: 14px;
+            border-bottom: none;
+            .prize-intro {
+                .intro {
+                    margin-bottom: 25px;
+                    font-size: 19px;
+                }
+                .prize {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    .prize-item:nth-child(1),.prize-item:nth-child(2),.prize-item:nth-child(3) {
+                        flex-grow: 1;
+                    }
+                    .prize-item:nth-child(2),.prize-item:nth-child(3) { margin-top: auto; }
+                    .prize-item:nth-child(3) { padding-top: 30px; }
+                    .prize-img.first { height: 120px; width: auto; }
+                    .prize-img.second { height: 90px; width: auto; }
+                    .prize-img.third { height: 55px; width: auto; }
+                    .prize-title {
+                        margin-top: 10px;
+                        font-size: 11px;
+                        font-weight: normal;
+                    }
+                    .prize-title:nth-child(2) { font-weight: bold; }
+                }
+            }
+        }
+        .download-btn-container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 99%;
+            margin: 0 auto 0 auto;
+            padding: 10px 0;
+            text-align: center;
+            .goToStore-txt {
+                width: 100%;
+                font-size: 15px;
+                padding-left: 0px;
+                .code-intro {  }
+                .code {
+                    padding: 10px;
+                    margin-left: 10px;
+                }
+            }
+            .goToStore-btn {
+                width: 100%;
+                margin-top: 5px;
+
+                .download-btn {
+                    width: 130px;
+                    padding-right: 0px;
+                    margin: 10px 0 0 0;
+                    &.play { margin: 0 10px 0 0; };
+                }
+            }
+        }
+    }
+}
+
+.event-ac {
+    .slider-container {
+        margin-top: 20px;
+        .game-prev-img { height: 260px; }
+    }
+    .game-prev-ico {
+        height: 55px;
+    }
+}
+
 /* IMPRINT */
 .imprint { padding: 20px 0 10px 0 }
 .imprint a, p { font-size: 10px }
@@ -1346,6 +1958,100 @@ textarea:-ms-input-placeholder { font-size: 10px }
 .icon { width: 25px; }
 
 
+/* EVENT SECTION */
+.event-unit {
+    height: initial;
+    .event-wallpaper {
+        display: none;
+        width: 160%;
+        top: 11%;
+        left: -17%;
+    }
+    .section-textbox {
+        margin-top: 13px;
+        .event-headline { font-size: 18px; }
+        .section1-sub {
+            background: url("../images/event/stadium1.jpeg");
+            background-size: 160%;
+            background-repeat: no-repeat;
+            background-position-x: 17%;
+            width: 99%;
+            margin: 15px auto 0 auto;
+            padding: 20px 0;
+            font-size: 14px;
+            border-bottom: none;
+            .prize-intro {
+                .intro {
+                    margin-bottom: 15px;
+                    font-size: 16px;
+                }
+                .prize {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    .prize-item:nth-child(1),.prize-item:nth-child(2),.prize-item:nth-child(3) {
+                        flex-grow: 1;
+                    }
+                    .prize-item:nth-child(2),.prize-item:nth-child(3) { margin-top: auto; }
+                    .prize-item:nth-child(3) { padding-top: 30px; }
+                    .prize-img.first { height: 90px; width: auto; }
+                    .prize-img.second { height: 75px; width: auto; }
+                    .prize-img.third { height: 55px; width: auto; }
+                    .prize-title {
+                        margin-top: 10px;
+                        font-size: 11px;
+                        font-weight: normal;
+                    }
+                    .prize-title:nth-child(2) { font-weight: bold; }
+                }
+            }
+        }
+        .download-btn-container {
+//            display: table;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 99%;
+            margin: 0 auto 0 auto;
+            padding: 10px 0;
+            text-align: center;
+            .goToStore-txt {
+//                display: table-cell;
+//                text-align: center;
+                width: 100%;
+                //text-align: center;
+                font-size: 13px;
+                padding: 0;
+                .code-intro {  }
+                .code {
+                    padding: 10px;
+                    margin-left: 10px;
+                }
+            }
+            .goToStore-btn {
+                width: 100%;
+
+                .download-btn {
+                    width: 130px;
+                    padding-right: 0px;
+                    margin: 10px 0 0 0;
+                    &.play { margin: 0 10px 0 0; };
+                }
+            }
+        }
+    }
+}
+
+.event-ac {
+    .slider-container {
+        margin-top: 20px;
+        .game-prev-img { height: 260px; }
+    }
+    .game-prev-ico {
+        height: 55px;
+    }
+}
+
 }
 
 /* ----------- iPhone 5 ----------- */
@@ -1354,6 +2060,89 @@ textarea:-ms-input-placeholder { font-size: 10px }
 
 .main-device-img  { height: 240px; vertical-align: bottom; margin: 10px auto 0 auto;}
 .main-device-right { margin-left: 15px }
+
+/* EVENT SECTION */
+.event-unit {
+    height: initial;
+    .event-wallpaper {
+        width: 177%;
+        top: 11%;
+        left: -17%;
+    }
+    .section-textbox {
+        margin-top: 13px;
+        .event-headline { font-size: 18px; }
+        .section1-sub {
+            background: url("../images/event/stadium1.jpeg");
+            background-size: 180%;
+            background-repeat: no-repeat;
+            background-position-x: 17%;
+            width: 99%;
+            margin: 15px auto 0 auto;
+            padding: 20px 0;
+            font-size: 14px;
+            border-bottom: none;
+            .prize-intro {
+                .intro {
+                    margin-bottom: 15px;
+                    font-size: 16px;
+                }
+                .prize {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    .prize-item:nth-child(1),.prize-item:nth-child(2),.prize-item:nth-child(3) {
+                        flex-grow: 1;
+                    }
+                    .prize-item:nth-child(2),.prize-item:nth-child(3) { margin-top: auto; }
+                    .prize-item:nth-child(3) { padding-top: 30px; }
+                    .prize-img.first { height: 90px; width: auto; }
+                    .prize-img.second { height: 75px; width: auto; }
+                    .prize-img.third { height: 55px; width: auto; }
+                    .prize-title {
+                        margin-top: 10px;
+                        font-size: 11px;
+                        font-weight: normal;
+                    }
+                    .prize-title:nth-child(2) { font-weight: bold; }
+                }
+            }
+        }
+        .download-btn-container {
+//            display: table;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 99%;
+            margin: 0 auto 0 auto;
+            padding: 10px 0;
+            text-align: center;
+            .goToStore-txt {
+//                display: table-cell;
+//                text-align: center;
+                width: 100%;
+                //text-align: center;
+                font-size: 13px;
+                padding: 0 15px;
+                .code-intro {  }
+                .code {
+                    padding: 10px;
+                    margin-left: 10px;
+                }
+            }
+            .goToStore-btn {
+                width: 100%;
+
+                .download-btn {
+                    width: 130px;
+                    padding-right: 0px;
+                    margin: 10px 0 0 0;
+                    &.play { margin: 0 10px 0 0; };
+                }
+            }
+        }
+    }
+}
 
 }
 

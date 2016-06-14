@@ -1,0 +1,19 @@
+<header class="header-unit sm unit" itemscope itemtype="http://schema.org/Product">
+    <h1 class="brandheader"><span itemprop="name">Kazong Game</span>. <span itemprop="description">Quiz-, Mini & Brain-Game Multiplayer App</span></h1>
+    <div class="wrapper text-center" itemscope itemtype="http://schema.org/ImageObject">
+        <a href="/{{page.language}}/" hreflang="{{ page.language }}"><img class="header-logo sm" src="/{{ page.base_dir }}images/corporate/kazong-header.png" alt="Kazong Game | Quiz, Mini, Brain-Game Multiplayer APP" itemprop="contentUrl"></a>
+        <ul class="lang-links">
+            {% for language in site.languages %}
+            {% capture lang_icon %}{{ language }}.png{% endcapture %}
+            {% capture lang_path %}/{{ page.language }}{% endcapture %}
+            <li>
+                {% if language != page.language %}
+                    <a rel="alternate" href="/{{ language }}{{ page.url | remove_first:lang_path }}" hreflang="{{ language }}"><img class="lang-sel-img" src="{{ page.base_dir }}images/{{ lang_icon }}"/></a>
+                {% else %}
+                <img class="lang-sel-img" src="{{ page.base_dir }}images/{{ lang_icon }}"/>
+                {% endif %}
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</header>
