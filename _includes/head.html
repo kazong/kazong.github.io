@@ -32,7 +32,11 @@
     document,'script','https://connect.facebook.net/en_US/fbevents.js');
 
     fbq('init', '270923726577245');
-    fbq('fbtrack', "ViewContent");</script>
+    fbq('track', "PageView");
+    // ViewContent
+    // Track key page views (ex: product page, landing page or article)
+    fbq('track', 'ViewContent');
+    </script>
     <noscript><img height="1" width="1" style="display:none"
     src="https://www.facebook.com/tr?id=270923726577245&ev=PageView&noscript=1"
     /></noscript>
