@@ -239,6 +239,7 @@ function fillHighScore () {
 	$('#board').show ();
 	sendAjaxToTheServer ( 'GET', {}, function ( code, retData ) {
 		if ( code ) {
+			alert ( JSON.stringify ( retData ) );
 			retData.forEach ( function ( value, index ) {
 				$('#scoreTable').append ( '<tr><td>' + (index + 1) + '</td><td>' + value.displayName + '</td><td>' + value.highScore + '</td></tr>' );
 			});
@@ -271,7 +272,6 @@ function checkIfHigh ( newScore ) {
 function onHighScoreSubmit () {
 	userCurName = $('#userIn').val ();
 	// userCurHigh = newScore;
-	alert ( userCurName + ' ' + userCurHigh );
 	sendAjaxToTheServer ( 'POST', { displayName: userCurName, highScore: userCurHigh }, function ( code ) {
 		fillHighScore ();
 	});
