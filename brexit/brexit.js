@@ -243,8 +243,9 @@ function fillHighScore () {
 	sendAjaxToTheServer ( 'GET', {}, function ( code, retData ) {
 		if ( code ) {
 			// alert ( JSON.stringify ( retData ) );
+			$('.removeMe').remove();
 			retData.data.forEach ( function ( value, index ) {
-				$('#scoreTable').append ( '<tr><td>' + (index + 1) + '</td><td>' + value.displayName + '</td><td>' + value.highScore + '</td></tr>' );
+				$('#scoreTable').append ( '<tr class="removeMe"><td>' + (index + 1) + '</td><td>' + value.displayName + '</td><td>' + value.highScore + '</td></tr>' );
 			});
 		} // Endif.
 	});
