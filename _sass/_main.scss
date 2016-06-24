@@ -507,7 +507,8 @@ body { background-color: #453a4b; color: #fff; margin: 0; }
         width: 400px;
         margin: 20px auto 80px auto;
         padding: 20px 0px;
-        .game-over {
+    }
+    .game-over {
             height: 600px;
             width: 400px;
             background-image: url('../images/event/brexit/brexit-teaparty-bg.jpg');
@@ -576,7 +577,6 @@ body { background-color: #453a4b; color: #fff; margin: 0; }
                 th:last-child { text-align: right; }
             }
         }
-    }
 }
 
 /*-----------------------------------------------------------------------------------*/
