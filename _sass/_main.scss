@@ -528,14 +528,18 @@ body { background-color: #453a4b; color: #fff; margin: 0; }
             background-position: center;
             background-size: cover;
             margin: 20px auto 80px auto;
+            border: 5px solid #fff;
         }
         .th {
             font-weight: bold;
             font-size: 23px;
             line-height: 2;
+            color: #feb44b;
             span {
                 display: block;
                 font-size: 25px;
+                color: #fff;
+                font-weight: bold;
             }
         }
         .neweuropass {
