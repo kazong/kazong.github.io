@@ -242,8 +242,8 @@ function fillHighScore () {
 	$('#board').show ();
 	sendAjaxToTheServer ( 'GET', {}, function ( code, retData ) {
 		if ( code ) {
-			// alert ( JSON.stringify ( retData ) );
-			$('.removeMe').remove();
+			$('#scoreTable').empty ();
+			$('#scoreTable').append ( '<tr><th>#</th><th>Applicant</th><th>Qualification-Score</th></tr>' );
 			retData.data.forEach ( function ( value, index ) {
 				$('#scoreTable').append ( '<tr class="removeMe"><td>' + (index + 1) + '</td><td>' + value.displayName + '</td><td>' + value.highScore + '</td></tr>' );
 			});
