@@ -23,6 +23,7 @@ function preload () {
     game.load.image ( 'tomato2', 'tea2.png' );
     game.load.image ( 'back', 'back.jpg' );
 	game.load.image ( 'cursor', 'cursor.png' );
+	game.load.image ( 'introbg', 'introbg.png' );
 	game.load.bitmapFont ( 'stack', 'desyrel.png', 'desyrel.xml' );
 	game.load.spritesheet ( 'dave', 'dave.png', 211, 275, 28 );
 }
@@ -129,6 +130,7 @@ function setOpenScreen () {
 		midText.destroy ();
 		midText = null;
 	} // Endif.
+	gameObjsList.create ( game.camera.x, 300, 'introbg' );
 	midText = game.add.bitmapText ( 15 + game.camera.x, 465, 'stack', 'Throw as many teabags\n           as possible\n(Press the mouse button)', 32 );
 }
 
