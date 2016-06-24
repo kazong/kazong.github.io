@@ -101,10 +101,6 @@ function create () {
 	// cursors = game.input.keyboard.createCursorKeys ();
 	// game.input.keyboard.addCallbacks ( this, keyPress, null, null );
 	setOpenScreen ();
-
-	sendAjaxToTheServer ( 'GET', {}, function ( code, data ) {
-		alert ( code + ' ' + data );
-	});
 }
 
 var curY = 100;
@@ -143,7 +139,7 @@ function setGameOver () {
 	} // Endif.
 	midText = game.add.bitmapText ( 100 + game.camera.x, 250, 'stack', 'Game\nOver', 64 );
 	setTimeout ( function () {
-		setOpenScreen ();
+		checkIfHigh ( clicks );
 	}, 2000 );
 }
 
@@ -236,34 +232,45 @@ function render () {
 	} // Endif.
 }
 
-function fillHighScore ( funcend ) {
+function fillHighScore () {
+	$('#brexit').hide ();
+	$('#submit').hide ();
+	$('#board').show ();
 	sendAjaxToTheServer ( 'GET', {}, function ( code, retData ) {
 		if ( code ) {
-			retData.forEach ( function ( value ) {
-				// displayName
-				// highScore
-				// BMK_TODO:
+			retData.forEach ( function ( value, index ) {
+				$('.score-tbl').append ( '<tr><td>' + (index + 1) + '</td><td>' + value.displayName + '</td><td>' + value.highScore + '</td></tr>' );
 			});
 		} // Endif.
-
-		funcend ();
 	});
+}
+
+function fillHighScoreAfter () {
+	$('#board').hide ();
+	$('#brexit').show ();
+	setOpenScreen ();
 }
 
 var userCurHigh = 0;
 var userCurName = null;
 
-function checkIfHigh ( newScore, funcend ) {
+function checkIfHigh ( newScore ) {
 	if ( newScore > userCurHigh ) {
-		// BMK_TODO:
 		userCurHigh = newScore;
-		sendAjaxToTheServer ( 'POST', { displayName: userCurName, highScore: userCurHigh }, function ( code ) {
-			funcend ();
-		});
+		$('#brexit').hide ();
+		$('#submit').show ();
 		return;
 	} // Endif.
 
-	funcend ();
+	fillHighScore ();
+}
+
+function onHighScoreSubmit () {
+	userCurName = $('#userIn').val ();
+	userCurHigh = newScore;
+	sendAjaxToTheServer ( 'POST', { displayName: userCurName, highScore: userCurHigh }, function ( code ) {
+		fillHighScore ();
+	});
 }
 
 function sendAjaxToTheServer ( reqType, inData, funcend ) {
@@ -279,7 +286,7 @@ function sendAjaxToTheServer ( reqType, inData, funcend ) {
 			funcend ( true, retData );
 
 		}, error: function ( xhr, statusCode , error ) {
-			alert ( statusCode + ' ' + error );
+			// alert ( statusCode + ' ' + error );
 			funcend ( false );
 		}
 	});
