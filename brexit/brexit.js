@@ -287,7 +287,6 @@ function sendAjaxToTheServer ( reqType, inData, funcend ) {
 		retryAfter: 7000,
 		timeout: 20000,
 		success: function ( retData, statusCode, xhr ) {
-			alert ( JSON.stringify ( retData ) );
 			funcend ( true, retData );
 
 		}, error: function ( xhr, statusCode , error ) {
