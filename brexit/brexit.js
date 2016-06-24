@@ -270,7 +270,7 @@ function checkIfHigh ( newScore ) {
 
 function onHighScoreSubmit () {
 	userCurName = $('#userIn').val ();
-	userCurHigh = newScore;
+	// userCurHigh = newScore;
 	sendAjaxToTheServer ( 'POST', { displayName: userCurName, highScore: userCurHigh }, function ( code ) {
 		fillHighScore ();
 	});
