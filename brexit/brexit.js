@@ -239,7 +239,8 @@ function fillHighScore () {
 	$('#board').show ();
 	sendAjaxToTheServer ( 'GET', {}, function ( code, retData ) {
 		if ( code ) {
-			retData.forEach ( function ( value, index ) {
+			// alert ( JSON.stringify ( retData ) );
+			retData.data.forEach ( function ( value, index ) {
 				$('#scoreTable').append ( '<tr><td>' + (index + 1) + '</td><td>' + value.displayName + '</td><td>' + value.highScore + '</td></tr>' );
 			});
 		} // Endif.
@@ -270,7 +271,7 @@ function checkIfHigh ( newScore ) {
 
 function onHighScoreSubmit () {
 	userCurName = $('#userIn').val ();
-	userCurHigh = newScore;
+	// userCurHigh = newScore;
 	sendAjaxToTheServer ( 'POST', { displayName: userCurName, highScore: userCurHigh }, function ( code ) {
 		fillHighScore ();
 	});
@@ -281,7 +282,7 @@ function sendAjaxToTheServer ( reqType, inData, funcend ) {
 		url: 'https://kazong-game.com/api/brexit',
 		type: reqType || 'GET',
 		data: inData || {},
-		datatype: "jsonp",
+		datatype: "json",
 		retryLimit: 3,
 		retryAfter: 7000,
 		timeout: 20000,
