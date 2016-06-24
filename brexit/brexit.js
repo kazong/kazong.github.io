@@ -235,11 +235,12 @@ function render () {
 function fillHighScore () {
 	$('#brexit').hide ();
 	$('#submit').hide ();
+	$('#gameOver').show ();
 	$('#board').show ();
 	sendAjaxToTheServer ( 'GET', {}, function ( code, retData ) {
 		if ( code ) {
 			retData.forEach ( function ( value, index ) {
-				$('.score-tbl').append ( '<tr><td>' + (index + 1) + '</td><td>' + value.displayName + '</td><td>' + value.highScore + '</td></tr>' );
+				$('#scoreTable').append ( '<tr><td>' + (index + 1) + '</td><td>' + value.displayName + '</td><td>' + value.highScore + '</td></tr>' );
 			});
 		} // Endif.
 	});
@@ -247,6 +248,7 @@ function fillHighScore () {
 
 function fillHighScoreAfter () {
 	$('#board').hide ();
+	$('#gameOver').hide ();
 	$('#brexit').show ();
 	setOpenScreen ();
 }
@@ -258,6 +260,7 @@ function checkIfHigh ( newScore ) {
 	if ( newScore > userCurHigh ) {
 		userCurHigh = newScore;
 		$('#brexit').hide ();
+		$('#gameOver').show ();
 		$('#submit').show ();
 		return;
 	} // Endif.
