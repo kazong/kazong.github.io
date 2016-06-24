@@ -1,0 +1,38 @@
+{% assign event_item = site.data[page.language].event_item %}
+{% assign eventunit = event_item.eventunit %}
+{% assign prizeunit = event_item.prizeunit %}
+{% assign screenshots = event_item.screenshots %}
+{% assign descriptionunit = event_item.descriptionunit %}
+{% assign gamesunit = event_item.eventgamesunit %}
+{% assign challengeunit = event_item.challengeunit %}
+
+<section class="event-unit game">
+    <article class="section-textbox">
+            <p class="event-headline">Join The Brexit Tea Party</p>
+            <div id="brexit" class="game teaparty">
+
+                <div id="submit" class="apply" style="display: none">
+                    <div class="th">
+                        Submit your Score <span>Apply for the New-Euro-Pass</span>
+                    </div>
+                    <img class="neweuropass" src="../images/event/brexit/neweuropass.png"/>
+                    <input class="nick" placeholder="Passport Holder Name">
+                    <button class="submit">Submit</button>
+                </div>
+
+                <div id="board" class="highscores">
+                    <div class="th">
+                        Heightscores
+                        <span>Top 100</span>
+                    </div>
+                    <table class="score-tbl">
+                        <tr>
+                            <th>#</th>
+                            <th>Applicant</th>
+                            <th>Qualification-Score</th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+    </article>
+</section>

@@ -238,6 +238,10 @@ body { background-color: #453a4b; color: #fff; margin: 0; }
 .unit {
     border-bottom: 2px solid #1e1923;
 }
+.unit.btop {
+    border-top: 2px solid #1e1923;
+    border-bottom: 0px;
+}
 
 .header-unit {
     position: relative;
@@ -496,6 +500,77 @@ body { background-color: #453a4b; color: #fff; margin: 0; }
     }
 }
 
+.event-unit {
+    &.game { height: 100%; }
+    .game {
+        height: 600px;
+        width: 400px;
+        margin: 20px auto 80px auto;
+        padding: 20px 0px;
+        &.teaparty {
+            background-image: url('../images/event/brexit/brexit-teaparty-bg.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        .th {
+            font-weight: bold;
+            font-size: 23px;
+            line-height: 2;
+            span {
+                display: block;
+                font-size: 25px;
+            }
+        }
+        .neweuropass {
+            margin: 30px auto;
+            width: 150px;
+            height: auto;
+        }
+        .nick {
+            width: 55%;
+            background-color: transparent;
+            border-radius: 15px;
+            text-align: center;
+            border: 1px solid #feb44b;
+            margin: auto;
+            padding: 10px 0px;
+            box-shadow: none;
+            font-size: 18px;
+            color: #feb44b;
+        }
+        .nick:focus {
+            outline:none;
+        }
+        .submit {
+            width: 55%;
+            background-color: #873caf;
+            border-radius: 15px;
+            text-align: center;
+            margin: auto;
+            padding: 10px 20px;
+            box-shadow: none;
+            font-size: 18px;
+            border-style: none;
+            border-color: none;
+            color: #fff;
+            font-weight: bold;
+            margin-top: 30px;
+        }
+        .highscores {
+            display: table;
+            width: 100%;
+            .score-tbl {
+                border: 1px solid #fff;
+                width: 90%;
+                margin: auto;
+                th { font-weight: bold; }
+                th:last-child { text-align: right; }
+            }
+        }
+    }
+}
+
 /*-----------------------------------------------------------------------------------*/
 /*  END HOMEPAGE STYLES
 /*-----------------------------------------------------------------------------------*/
@@ -503,6 +578,18 @@ body { background-color: #453a4b; color: #fff; margin: 0; }
 /*-----------------------------------------------------------------------------------*/
 /*  FOOTER STYLES
 /*-----------------------------------------------------------------------------------*/
+
+
+footer.sticky {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.contact-wrapper {
+    padding-bottom: 5%;
+}
 
 .contact-form {
     display: inline-block;
@@ -1484,6 +1571,7 @@ textarea:-ms-input-placeholder { font-size: 10px }
     display: flex;
     flex-direction: column-reverse;
     font-size: 17px;
+    padding-bottom: 5%;
 
     .contact-txt {
         margin: 0 auto 20px auto;

@@ -1,0 +1,25 @@
+{% assign imprint = site.data[page.language].imprint %}
+{% assign press_page = site.data[page.language].press %}
+
+<footer class="bg-purple sticky unit btop">
+    <div class="wrapper imprint text-center">
+        <a class="fold-imprint">{{ imprint.name }}</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/{{ page.language }}/press.html" hreflang="{{ page.language }}">{{ press_page.name }}</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a rel="alternate" type="application/rss+xml" href="/{{ page.language }}/rss.xml" hreflang="{{ page.language }}">RSS</a>
+        <p class="centered">{{ imprint.copyright }}</p>
+    </div>
+    <div class="section2-bg">
+        <div class="wrapper-small imprint-unfold" itemscope itemtype="http://schema.org/Organization">
+            <h3 itemprop="name">{{ imprint.company }}</h3>
+            <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                <span itemprop="streetAddress">{{ imprint.address.street }}</span>,
+                <span itemprop="postalCode">{{ imprint.address.postalCode }}</span>,
+                <span itemprop="addressLocality">{{ imprint.address.country }}</span><br />
+                {{ imprint.info | raw }}
+            </div>
+            <p>{{ imprint.slogan }}</p>
+        </div>
+    </div>
+</footer>
+
+<div class="shariff social-media-sharing bg-responsive2"></div>
+
+{% include script_tags.html %}
