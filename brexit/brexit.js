@@ -130,7 +130,7 @@ function setOpenScreen () {
 		midText.destroy ();
 		midText = null;
 	} // Endif.
-	gameObjsList.create ( game.camera.x, 300, 'introbg' );
+	gameObjsList.create ( game.camera.x, 450, 'introbg' );
 	midText = game.add.bitmapText ( 15 + game.camera.x, 465, 'stack', 'Throw as many teabags\n           as possible\n(Press the mouse button)', 32 );
 }
 
