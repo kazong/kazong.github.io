@@ -560,16 +560,17 @@ body { background-color: #453a4b; color: #fff; margin: 0; }
             margin-top: 30px;
         }
         .highscores {
-            display: table;
             width: 100%;
-            .th {
-                span {
-
-                }
+            height: 575px;
+            overflow:hidden;
+            .scroll {
+                overflow: scroll;
             }
             .score-tbl {
                 border: 1px solid #fff;
                 width: 90%;
+                height: 90%;
+                overflow: scroll;
                 margin: auto;
                 th { font-weight: bold; }
                 th:last-child { text-align: right; }
