@@ -173,7 +173,7 @@ function click ( pointer ) {
 	} else if ( curGateState === 1 ) {
 		var selX = Math.floor ( Math.random () * maxViewX );
 		var sprite = gameObjsList.create ( selX + game.camera.x, maxViewY - 50, 'tomato' );
-		sprite.scale.setTo ( 0.2, 0.2 );
+		sprite.scale.setTo ( 0.25, 0.25 );
 		game.physics.p2.enable ( sprite );
 		sprite.body.setMaterial ( spriteMaterial );
 		sprite.body.data.gravityScale = 1;
@@ -215,7 +215,7 @@ function update () {
 			if ( sprData.x >= hitX && sprData.y >= hitY && sprData.x < (hitX + hitSX) && sprData.y < (hitY + hitSY) ) {
 				if ( Math.floor ( Math.random () * 100 ) > 75 ) {
 					var sprite = gameObjsList2.create ( sprData.x, sprData.y, 'tomato2' );
-					sprite.scale.setTo ( 0.15, 0.15 );
+					sprite.scale.setTo ( 0.2, 0.2 );
 					// game.physics.p2.enable ( sprite );
 					// sprite.body.setMaterial ( spriteMaterial );
 					// sprite.body.data.gravityScale = 1;
@@ -251,6 +251,7 @@ function fillHighScoreAfter () {
 	$('#board').hide ();
 	$('#gameOver').hide ();
 	$('#brexit').show ();
+	clearScreen ();
 	setOpenScreen ();
 }
 
