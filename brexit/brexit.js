@@ -137,7 +137,7 @@ function setGameOver () {
 		midText.destroy ();
 		midText = null;
 	} // Endif.
-	midText = game.add.bitmapText ( 100 + game.camera.x, 250, 'stack', 'Game\nOver', 64 );
+	midText = game.add.bitmapText ( 100 + game.camera.x, 250, 'stack', 'Game\nOver', 64, { align: "center" } );
 	setTimeout ( function () {
 		checkIfHigh ( clicks );
 	}, 2000 );
