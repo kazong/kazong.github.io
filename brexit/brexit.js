@@ -45,6 +45,7 @@ var hitX;
 var hitSY;
 var hitSX;
 var mouseBody = null;
+var startTime = 10;
 
 // game.camera.y
 
@@ -107,7 +108,7 @@ var curY = 100;
 var curX = 100;
 var clicks = 0;
 var curGateState = -1;
-var timeLeft = 20;
+var timeLeft = startTime;
 
 function clearScreen () {
 	gameObjsList.destroy ( true );
@@ -128,7 +129,7 @@ function setOpenScreen () {
 		midText.destroy ();
 		midText = null;
 	} // Endif.
-	midText = game.add.bitmapText ( 30 + game.camera.x, 530, 'stack', 'Click to play Brexit!', 32 );
+	midText = game.add.bitmapText ( 5 + game.camera.x, 530, 'stack', 'Throw as many teabags as possible\n(Press the mouse button)', 32 );
 }
 
 function setGameOver () {
@@ -148,7 +149,7 @@ function click ( pointer ) {
 		clearScreen ();
 		clicks = 0;
 		curGateState = 1;
-		timeLeft = 20;
+		timeLeft = startTime;
 		scoreText.text = 'Clicks: ' + clicks;
 		timeText.text = 'Time left: ' + timeLeft;
 		if ( midText ) {
