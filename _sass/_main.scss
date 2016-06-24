@@ -513,11 +513,22 @@ body { background-color: #453a4b; color: #fff; margin: 0; }
         }
         article { z-index: 2; }
         canvas { border: 5px solid #000; }
+        .share {
+            text-align: center;
+            margin: 0 auto 10px auto;
+        }
+        .social-media-sharing {
+            position: initial;
+            margin: 0 auto 40px auto;
+            ul {
+                display: flex;
+            }
+        }
     }
     .game {
         height: 600px;
         width: 400px;
-        margin: 20px auto 80px auto;
+        margin: 20px auto 40px auto;
         padding: 20px 0px;
     }
     .game-over {
