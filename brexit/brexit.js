@@ -282,7 +282,7 @@ function sendAjaxToTheServer ( reqType, inData, funcend ) {
 		url: 'https://kazong-game.com/api/brexit',
 		type: reqType || 'GET',
 		data: inData || {},
-		datatype: "jsonp",
+		datatype: "json",
 		retryLimit: 3,
 		retryAfter: 7000,
 		timeout: 20000,
