@@ -243,7 +243,7 @@ function fillHighScore () {
 	sendAjaxToTheServer ( 'GET', {}, function ( code, retData ) {
 		if ( code ) {
 			$('#scoreTable').empty ();
-			$('#scoreTable').append ( '<tr><th>#</th><th>Applicant</th><th>Qualification-Score</th></tr>' );
+			$('#scoreTable').append ( '<tr><th>#</th><th>Applicant</th><th>Score</th></tr>' );
 			retData.data.forEach ( function ( value, index ) {
 				$('#scoreTable').append ( '<tr class="removeMe"><td>' + (index + 1) + '</td><td>' + value.displayName + '</td><td>' + value.highScore + '</td></tr>' );
 			});
