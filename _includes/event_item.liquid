@@ -4,7 +4,7 @@
 {% assign screenshots = event_item.screenshots %}
 {% assign descriptionunit = event_item.descriptionunit %}
 {% assign gamesunit = event_item.eventgamesunit %}
-{% assign challengeunit = event_item.challengeunit %}
+{% assign mentions = event_item.event_prunit %}
 
 <section class="event-unit unit">
     <img class="event-wallpaper" src="../images/event/em2016/stadium.jpeg"/>
@@ -77,34 +77,6 @@
             </div>
         </div>
     </article>
-    <!--article class="wrapper text-center">
-        <div class="section-one challenge-wrapper second">
-            <div class="section-textbox left">
-                <div class="section-txt left">
-                    <p class="section1-headline">{{ descriptionunit.duration-th }}</p>
-                    <p class="section1-sub">{{ descriptionunit.duration }}</p>
-                    <div class="achievements">
-                        <p class="ac-th">{{ descriptionunit.achievements-th }}</p>
-                        <ul class="section1-sub left">
-                            {% for feature in descriptionunit.achievements %}
-                            <li class="sub-feature-item">{{ feature }}</li>
-                            {% endfor %}
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="image-box">
-                <div class="lazy__container">
-                    <img class="main-device-img low-res" src="data:image/png;base64,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"/>
-                    <img class="main-device-img lazy" data-original="{{ page.base_dir }}images/{{ screenshots.flags.path }}" alt="{{ screenshots.flags.label }}" />
-                </div>
-                <div class="lazy__container">
-                    <img class="main-device-img img-right low-res" src="data:image/png;base64,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"/>
-                    <img class="main-device-img img-right lazy" data-original="{{ page.base_dir }}images/{{ screenshots.truefalse.path }}" alt="{{ screenshots.truefalse.label }}" />
-                </div>
-            </div>
-        </div>
-    </article-->
 </section>
 
 <section class="unit text-center event-ac">
@@ -121,3 +93,26 @@
         </div>
     </article>
 </section>
+
+<section class="bg-purple" style="border-bottom: 1px solid #34293a">
+    <article class="wrapper text-center">
+        <h2 class="section-headline">{{ mentions.headline }}</h2>
+        <div class="slider-container">
+            <ul class="publications">
+                <li class="release-item">
+                    <div class="release-unit colorinverse">
+                        <a href="" hreflang="{{ page.language }}">
+                            <div class="cell vmiddle"><img class="icon" src="http://gratisfuxx.de/images/graphics/Logo_GratisFuxx_64x64.png"></div>
+                            <div class="cell vmiddle release-msg">
+                                <a target="_blank" rel="nofollow" href="">
+                                   www.gratisfuxx.de/gewinnspiele
+                                </a>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </article>
+</section>
+

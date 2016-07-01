@@ -397,6 +397,7 @@ body { background-color: #453a4b; color: #fff; margin: 0; }
     display: table;
     text-align: left;
     background-color: #34293a;
+    &.colorinverse { background-color: #453a4b }
 }
 
 .team-img-lg { width: 100%; }
@@ -404,7 +405,7 @@ body { background-color: #453a4b; color: #fff; margin: 0; }
 .release-title { font-weight: bold; }
 .release-date { font-style: italic; }
 
-.press-publications {
+.publications {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -500,6 +501,8 @@ body { background-color: #453a4b; color: #fff; margin: 0; }
     }
 }
 
+//TEAPARTY GAME
+////////////////////////
 .event-unit {
     &.game {
         height: 100%;
@@ -791,7 +794,7 @@ footer.sticky {
 
 .btn-press-unit div { font-size: 17px; padding-top: 5px; }
 
-.press-publications { margin-bottom: 60px; }
+.publications { margin-bottom: 60px; }
 .release-unit {
     width: 52.5%;
     margin: 0 auto 30px auto;
@@ -1013,7 +1016,7 @@ footer.sticky {
 .btn-getpress { width: 175px; }
 .btn-press-unit div { font-size: 17px; padding-top: 5px; }
 
-.press-publications { margin-bottom: 60px; }
+.publications { margin-bottom: 60px; }
 .release-unit {
     width: 65%;
     margin: 0 auto 30px auto;
@@ -1241,7 +1244,7 @@ footer.sticky {
 .btn-getpress { width: 150px; }
 .btn-press-unit div { font-size: 14px; padding-top: 5px; }
 
-.press-publications { margin-bottom: 60px; }
+.publications { margin-bottom: 60px; }
 .release-unit {
     width: 75%;
     margin: 0 auto 30px auto;
@@ -1495,7 +1498,7 @@ textarea:-ms-input-placeholder { font-size: 10px }
 .btn-getpress { width: 125px; }
 .btn-press-unit div { font-size: 13px; padding-top: 5px; }
 
-.press-publications { margin-bottom: 60px; }
+.publications { margin-bottom: 60px; }
 .release-unit {
     width: 75%;
     margin: 0 auto 30px auto;
@@ -1669,7 +1672,7 @@ textarea:-ms-input-placeholder { font-size: 10px }
 .btn-getpress { width: 100px; }
 .btn-press-unit div { font-size: 13px; padding-top: 5px; }
 
-.press-publications { margin-bottom: 50px; }
+.publications { margin-bottom: 50px; }
 .release-unit {
     width: 90%;
     margin: 0 auto 15px auto;
@@ -1900,7 +1903,7 @@ textarea:-ms-input-placeholder { font-size: 10px }
 .btn-getpress { width: 80px; }
 .btn-press-unit div { font-size: 12px; padding-top: 2px; }
 
-.press-publications { margin-bottom: 50px; }
+.publications { margin-bottom: 50px; }
 .release-unit {
     width: 90%;
     margin: 0 auto 15px auto;
@@ -2076,7 +2079,7 @@ textarea:-ms-input-placeholder { font-size: 10px }
 .btn-getpress { width: 80px; }
 .btn-press-unit div { font-size: 12px; padding-top: 2px; }
 
-.press-publications { margin-bottom: 50px; }
+.publications { margin-bottom: 50px; }
 .release-unit {
     width: 90%;
     margin: 0 auto 15px auto;

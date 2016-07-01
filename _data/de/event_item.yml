@@ -33,6 +33,9 @@ descriptionunit:
 eventgamesunit:
   title: "EM 2016 Games & Achievements"
 
+event_prunit:
+  headline: "Ebenso zu finden auf"
+
 screenshots:
   challenge:
     path: "event/em2016/screens/cut/nexus-chl-cut.png"
@@ -46,3 +49,8 @@ screenshots:
   truefalse:
     path: "event/em2016/screens/cut/iphone-truefalse-cut.png"
     label: "Fußball Wappen raten"
+
+
+
+
+

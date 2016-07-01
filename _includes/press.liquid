@@ -26,7 +26,7 @@
 
     <article class="wrapper">
         <h3 class="section-headline md">{{ press.publication.headline }}</h3>
-        <ul class="press-publications">
+        <ul class="publications">
         {% for release in posts %}
             <li class="release-item">
                 {% include release_item.liquid %}
@@ -37,7 +37,7 @@
 
     <article class="wrapper">
         <h3 class="section-headline md">{{ press.media }}</h3>
-        <ul class="press-publications">
+        <ul class="publications">
             <li class="release-item">
                 {% include coverage-item.liquid %}
             </li>
