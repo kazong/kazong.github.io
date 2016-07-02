@@ -79,15 +79,12 @@ function initContactForm() {
     });
 }
 function initGoogleAnalytics() {
-    $('a[data-category]').each(function(idx, outbound_link) {
-        $link = $(outbound_link);
-        $link.click(function(event) {
-            ga('send', 'event', {
-                eventCategory: $link.data('category'),
-                eventAction: 'click',
-                eventLabel: $link.attr('href'),
-                transport: 'beacon'
-            });
+    $('a[data-category]').click(function(event) {
+        ga('send', 'event', {
+            eventCategory: $(this).data('category'),
+            eventAction: 'click',
+            eventLabel: $(this).attr('href'),
+            transport: 'beacon'
         });
     });
 }
