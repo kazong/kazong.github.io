@@ -14,11 +14,12 @@
     <meta property="og:title" content="{{ page.title }}" />
     <meta property="og:description" content="{{ page.description }}" />
     <meta property="og:image" content="{{ site.url }}{{ page.fb_image }}" />
-
-    {% for language in site.languages %}{% capture lang_path %}/{{ page.language }}{% endcapture %}{% if language != page.language %}
-    <link rel="alternate" href="/{{ language }}{{ page.url | remove_first:lang_path }}" hreflang="{{ language }}" />
-    {% endif %}{% endfor %}
-    <link href='/{{ page.language }}/rss.xml' rel='alternate' type='application/rss+xml' />
+    {% if ignore_i18n != true %}
+        {% for language in site.languages %}{% capture lang_path %}/{{ page.language }}{% endcapture %}{% if language != page.language %}
+        <link rel="alternate" href="/{{ language }}{{ page.url | remove_first:lang_path }}" hreflang="{{ language }}" />
+        {% endif %}{% endfor %}
+        <link href='/{{ page.language }}/rss.xml' rel='alternate' type='application/rss+xml' />
+    {% endif %}
     <link rel="icon" type="image/ico" href="/{{ page.base_dir }}images/fav-ico.ico" />
     <link href='///fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css' />
     <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}" />
