@@ -1161,6 +1161,14 @@ footer.sticky {
 .section-textbox { display: inline-block; vertical-align: top; margin-top: 20px; width: 53%; }
 .section-textbox.left { text-align: left }
 .section-textbox.right { text-align: right }
+
+.challenge-wrapper {
+    .section-textbox.right {
+        text-align: right;
+        margin-top: 0px;
+    }
+}
+
 .section-txt {
     display: inline-block;
     margin-right: 0;
