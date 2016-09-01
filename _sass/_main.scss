@@ -398,6 +398,11 @@ body { background-color: #453a4b; color: #fff; margin: 0; }
     text-align: left;
     background-color: #34293a;
     &.colorinverse { background-color: #453a4b }
+    .txt-icon {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: right;
+    }
 }
 
 .team-img-lg { width: 100%; }
