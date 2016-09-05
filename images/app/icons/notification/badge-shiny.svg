@@ -4,9 +4,9 @@
 <svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 159.2 181.3" enable-background="new 0 0 159.2 181.3" xml:space="preserve">
 <g>
-	<rect x="35.8" y="0" fill="#324595" width="87.8" height="28.4"/>
+	<rect x="35.8" y="0" fill="#324595" width="88" height="28.4"/>
 	
-		<rect x="50" y="44.5" transform="matrix(0.4778 -0.8785 0.8785 0.4778 1.9238 132.3922)" fill="#40529F" width="124.6" height="40.2"/>
+		<rect x="49.4" y="44.2" transform="matrix(0.4778 -0.8785 0.8785 0.4778 1.8415 131.7537)" fill="#40529F" width="124.6" height="40.2"/>
 	
 		<rect x="-14.4" y="44.2" transform="matrix(-0.4778 -0.8785 0.8785 -0.4778 14.324 137.1711)" fill="#40529F" width="124.6" height="40.2"/>
 	<circle fill="#EACD4B" cx="79.8" cy="123.2" r="53.5"/>
