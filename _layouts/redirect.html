@@ -11,11 +11,11 @@
         <meta name="description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
         <meta http-equiv="cache-control" content="public" />
 
-        <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+        <meta property="og:url" content="{{ page.open_graph.url }}" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="{{ page.title }}" />
-        <meta property="og:description" content="{{ page.description }}" />
-        <meta property="og:image" content="{{ site.url }}{{ page.fb_image }}" />
+        <meta property="og:title" content="{{ page.open_graph.title }}" />
+        <meta property="og:description" content="{{ page.open_graph.description }}" />
+        <meta property="og:image" content="{{ page.open_graph.image }}" />
 
         <link rel="icon" type="image/ico" href="/{{ page.base_dir }}images/fav-ico.ico" />
         <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}" />
