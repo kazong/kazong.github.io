@@ -13,7 +13,7 @@
     <meta property="og:type" content="website" />
     <meta property="og:title" content="{{ page.title }}" />
     <meta property="og:description" content="{{ page.description }}" />
-    <meta property="og:image" content="{{ site.url }}{{ page.fb_image }}" />
+    <meta property="og:image" itemprop="image" content="{{ site.url }}{{ page.fb_image }}" />
     {% if ignore_i18n != true %}
         {% for language in site.languages %}{% capture lang_path %}/{{ page.language }}{% endcapture %}{% if language != page.language %}
         <link rel="alternate" href="/{{ language }}{{ page.url | remove_first:lang_path }}" hreflang="{{ language }}" />
