@@ -1,0 +1,56 @@
+eventunit:
+  headline: Xmas 2016 - KAZONG EVENT
+  kicker: Spiele Fußball Quiz- + EM-Minigames und Gewinne tolle Preise
+  prize:
+    prize1: Playstation 4 inkl. FIFA 16
+    prize2: Ein Trikot deiner Wahl
+    prize3: XXL Nationalflagge (150x300)
+  download:
+    play: JETZT SPIELEN!
+    now:  LADE KAZONG AUS DEINEN APP STORE
+
+descriptionunit:
+  titel: Eventbeschreibung
+  event: UEFA Euro 2016 - Kazong Event
+  kicker: Sammle 5 Auszeichnungen in Fußball Quiz- & Mini-Games & qualifiziere dich für das Gewinnspiel
+  features:
+  - '<span style="color: #873caf; font-weight: bold;">5 Fußball EM</span> Quiz- und Mini-Games'
+  - "+1000 Quizfragen"
+  - "400 Fußball-Wappen im Länderquiz"
+  - "Chat - Funktion"
+  - "Noch mehr Spiele außerhalb des Events-Modus"
+  duration-th: Event-Zeitraum
+  duration: 16 Juni - 10 Juli 2016 (Ermittlung der Gewinner am 11 Juli 2016)
+  achievements-th: 'Zu erspielende Achievements:'
+  achievements:
+  - '<span style="color: #873caf; font-weight: bold;">Gespielte Challenges:</span> Spiele 54 Challenges'
+  - '<span style="color: #873caf; font-weight: bold;">Fußball-Quiz:</span> Beantworte 74 Fußball-Quiz Fragen richtig'
+  - '<span style="color: #873caf; font-weight: bold;">Fußballclub-Wappen:</span> Beantworte 90 Fußball-Wappen Fragen richtig'
+  - '<span style="color: #873caf; font-weight: bold;">MatchUP - EM 2016 Edition:</span> Spiele MatchUP in unter 20 Sek.'
+  - '<span style="color: #873caf; font-weight: bold;">Sei schnell in 50Lines!</span> Schaffe 50Lines in unter 14 Sek.'
+
+
+eventgamesunit:
+  title: "EM 2016 Games & Achievements"
+
+event_prunit:
+  headline: "Ebenso zu finden auf"
+
+screenshots:
+  challenge:
+    path: "event/em2016/screens/cut/nexus-chl-cut.png"
+    label: "Fußball Quiz, Mini and Brain Game-Duelle"
+  game:
+    path: "event/em2016/screens/cut/iphone-picsup-cut.png"
+    label: "Fußball Wappen raten"
+  flags:
+    path: "event/em2016/screens/cut/nexus_flags-cut.png"
+    label: "Fußball Quiz, Mini and Brain Game-Duelle"
+  truefalse:
+    path: "event/em2016/screens/cut/iphone-truefalse-cut.png"
+    label: "Fußball Wappen raten"
+
+
+
+
+

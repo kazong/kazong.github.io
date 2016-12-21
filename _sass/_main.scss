@@ -187,6 +187,28 @@ textarea { resize: none; margin-bottom: 15px; padding: 10px 0;}
         color: #34293a;
     }
     a:hover { color: #873caf; }
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        .dropdown-content {
+            display: none;
+            min-width: 160px;
+            padding: 12px 16px;
+            z-index: 1;
+            a:first-child {
+                padding: 2vh 0 3vh 0;
+            }
+            .event {
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
 
@@ -432,6 +454,36 @@ body { background-color: #453a4b; color: #fff; margin: 0; }
 //////////////////
 
 .event-unit {
+    &.unit.xmas {
+       .event-headline {
+            color: #0087e1;
+            text-shadow: -1px -1px 0 #87beed,1px -1px 0 #87beed,-1px 1px 0 #87beed,1px 1px 0 #87beed;
+            text-shadow: none;
+            padding-top: 2vh;
+       }
+       .section1-sub {
+            background-image: none;
+            background-color: rgba(0,0,0,.15);
+            border: none;
+            .prize-intro {
+                .intro {
+                    color: #0087e1;
+                    font-weight: bold;
+                    text-shadow: none;
+                    margin-bottom: 2vh !important;
+                }
+            }
+       }
+       .download-btn-container {
+            border: none;
+            background-color: rgba(0,0,0,0.15);
+            .goToStore-txt {
+                .playnow {
+                    color: #0087e1;
+                }
+            }
+        }
+    }
     position: relative;
     background-color: #453a4b;
     overflow: hidden;
@@ -503,6 +555,22 @@ body { background-color: #453a4b; color: #fff; margin: 0; }
     }
     .challenge-wrapper.second {
         flex-direction: column;
+    }
+    &.xmas {
+        background-image: url(../images/event/xmas2016/xmas-wallpaper-empty.jpg);
+        background-position-y: bottom;
+        background-size: cover;
+        color: #0087e1;
+        .section-headline {
+            color: #0087e1 !important;
+        }
+        .duration {
+            color: #87beed !important;
+        }
+        .sub-features .sub-feature-item {
+            background-color: #87beed;
+            color: #fff;
+        }
     }
 }
 

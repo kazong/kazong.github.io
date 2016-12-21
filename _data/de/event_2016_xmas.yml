@@ -1,0 +1,56 @@
+eventunit:
+  headline: XMAS + NEUJAHR 2016 - KAZONG EVENT
+  kicker: Gewinne tolle Preise im großen Weihnachts Quiz- & Puzzle-Duell
+  prize:
+    prize1: 40€ Gutschein
+    prize2: 20€ Gutschein
+    prize3: 10€ Gutschein
+  download:
+    play: JETZT SPIELEN!
+    now:  LADE KAZONG AUS DEINEN APP STORE
+
+descriptionunit:
+  titel: Eventbeschreibung
+  event: Das große Weihanchts & Nachjahrs - Kazong Event
+  kicker: Sammle 5 Auszeichnungen in feierlichen Quiz- & Puzzle-Games & qualifiziere dich für das Gewinnspiel
+  features:
+  - '<span style="color: #0087e1; font-weight: bold;">4 XMAS + NEUJAHRS</span> Quiz- & Puzzle-Games'
+  - "+500 Quizfragen"
+  - "+100 Bilder"
+  - "Chat - Funktion"
+  - "Noch mehr Spiele außerhalb des Event-Modus"
+  duration-th: Event-Zeitraum
+  duration: 20.12.2016 - 05.01.2017 (Ermittlung der Gewinner am 06.01.2017)
+  achievements-th: 'Zu erspielende Achievements:'
+  achievements:
+  - '<span style="color: #873caf; font-weight: bold;">Gespielte Challenges:</span> Spiele 54 Challenges'
+  - '<span style="color: #873caf; font-weight: bold;">Fußball-Quiz:</span> Beantworte 74 Fußball-Quiz Fragen richtig'
+  - '<span style="color: #873caf; font-weight: bold;">Fußballclub-Wappen:</span> Beantworte 90 Fußball-Wappen Fragen richtig'
+  - '<span style="color: #873caf; font-weight: bold;">MatchUP - EM 2016 Edition:</span> Spiele MatchUP in unter 20 Sek.'
+  - '<span style="color: #873caf; font-weight: bold;">Sei schnell in 50Lines!</span> Schaffe 50Lines in unter 14 Sek.'
+
+
+eventgamesunit:
+  title: "EM 2016 Games & Achievements"
+
+event_prunit:
+  headline: "Ebenso zu finden auf"
+
+screenshots:
+  challenge:
+    path: "event/xmas2016/xmas-chl.png"
+    label: "Fußball Quiz, Mini and Brain Game-Duelle"
+  game:
+    path: "event/xmas2016/xmas-tf.png"
+    label: "Fußball Wappen raten"
+  flags:
+    path: "event/em2016/screens/cut/nexus_flags-cut.png"
+    label: "Fußball Quiz, Mini and Brain Game-Duelle"
+  truefalse:
+    path: "event/em2016/screens/cut/iphone-truefalse-cut.png"
+    label: "Fußball Wappen raten"
+
+
+
+
+
