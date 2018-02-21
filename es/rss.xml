@@ -1,8 +1,0 @@
----
-layout: null
-language: es
-title: Kazong - Juegan con sus amigos y amigas
-description: Kazong Game | Quiz, Mini, Brain-Game Multiplayer APP!
-author: Kazong Games
----
-{% include rss_feed.xml %}

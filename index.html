@@ -1,14 +1,64 @@
----
-layout: redirect
-language: en
-title: Kazong - Play with friends
-description: Kazong Game | Quiz, Mini, Brain-Game Multiplayer APP!
-author: Kazong Games
-base_dir: ./
-open_graph:
-    title: Spiel ein Quiz & Minispiel Duell gegen mich!
-    description: Über 10 Spiele alleine und gegen Freunde
-    url: https://kazong-game.com/
-    image: images/corporate/icons/icon-256.png
----
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="apple-touch-icon" href="icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Indie+Flower|Lobster|Pacifico|Rubik|Yanone+Kaffeesatz" rel="stylesheet">
+    </head>
+    <body>
+        <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <canvas id="bg-canvas"></canvas>
+        <section class="page">
+            <div class="page-wrapper">
+                <div class="bevel">play with friends</div>
+                <div class="icon">
+                    <img src="img/kazong-icon.svg"/>
+                </div>
+                <div class="container">
+                    <div class="box1">
+                        <a href="https://itunes.apple.com/de/app/id1082430396?mt=8&ign-mpt=uo%3D4"><img src="img/Download_on_the_App_Store_Badge_DE_Source_135x40.svg"/></a>
+                    </div>
+                    <div class="box2">
+                    </div>
+                    <div class="box3">
+                        <a href="https://play.google.com/store/apps/details?id=com.kazong.game"><img src="img/google-play-badge.png"/></a>
+                    </div>
+                </div>
+            </div>
+            <div class="social">
+                <a href="https://www.instagram.com/kazong_games/"><img class="icon" src="img/insta-bw.svg"/></a>
+                <a href="https://www.facebook.com/kazong.games"><img class="icon" src="img/fb-bw.svg"/></a>
+                <a href="https://twitter.com/kazong_game/"><img class="icon" src="img/twitter-bw.svg"/></a>
+            </div>
+        </section>
+
+
+        <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+        <script>
+            window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+            ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
+        </script>
+        <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+    </body>
+</html>
