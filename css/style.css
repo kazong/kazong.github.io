@@ -41,6 +41,7 @@ body {
         transform: translatey(0px);
         animation: Float 6s ease-in-out infinite; }
     .page .page-wrapper .container {
+      pointer-events: all;
       display: flex;
       width: 100%;
       flex-wrap: wrap; }
@@ -56,6 +57,7 @@ body {
         border-radius: 10px;
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.25); }
   .page .social {
+    pointer-events: all;
     position: absolute;
     top: 2%;
     right: 3%; }

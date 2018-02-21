@@ -46,6 +46,7 @@ body {
             }
         }
         .container {
+            pointer-events: all;
             display: flex;
             width: 100%;
             flex-wrap: wrap;
@@ -69,6 +70,7 @@ body {
         }
     }
     .social {
+        pointer-events: all;
         position: absolute;
         top: 2%;
         right: 3%;
