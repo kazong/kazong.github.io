@@ -16,10 +16,17 @@ body {
     }
 }
 
-@font-face {
-    font-family: 'Gloria';
-    src:    url('../fonts/GloriaHallelujah.ttf');
-    font-weight: normal;
+.impressum {
+    margin: auto 10em;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: #8e8e8e;
+    font-family: Gloria+Hallelujah;
 }
 
 .page {
@@ -37,8 +44,8 @@ body {
         text-align: center;
         .bevel {
             text-shadow: 0px 2px 3px rgba(234, 235, 239,0.8);
-            color: #c3bdbd;
-            font-family: Gloria;
+            color: #ada8a8;
+            font-family: Gloria+Hallelujah;
             font-size: 3em;
         }
         .icon {
@@ -52,7 +59,6 @@ body {
             }
         }
         .container {
-            pointer-events: all;
             display: flex;
             width: 100%;
             flex-wrap: wrap;
@@ -76,8 +82,7 @@ body {
         }
     }
     .social {
-        pointer-events: all;
-        position: absolute;
+        position: fixed;
         top: 2%;
         right: 3%;
         .icon {
@@ -116,6 +121,9 @@ body {
         display: none;
     }
     .page {
+        .social {
+            top: 1.3%;
+        }
         .page-wrapper {
             padding: 5vh 7vw;
             .bevel {
@@ -138,5 +146,8 @@ body {
                 }
             }
         }
+    }
+    .impressum {
+        margin: auto 2em;
     }
 }

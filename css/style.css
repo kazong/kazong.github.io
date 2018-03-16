@@ -14,10 +14,17 @@ body {
     background-position: 100% 50%; }
   100% {
     background-position: 0% 50%; } }
-@font-face {
-  font-family: 'Gloria';
-  src: url("../fonts/GloriaHallelujah.ttf");
-  font-weight: normal; }
+.impressum {
+  margin: auto 10em; }
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  color: #8e8e8e;
+  font-family: GloriaHallelujah; }
+
 .page {
   pointer-events: none;
   position: absolute;
@@ -33,8 +40,8 @@ body {
     text-align: center; }
     .page .page-wrapper .bevel {
       text-shadow: 0px 2px 3px rgba(234, 235, 239, 0.8);
-      color: #c3bdbd;
-      font-family: Gloria;
+      color: #ada8a8;
+      font-family: GloriaHallelujah;
       font-size: 3em; }
     .page .page-wrapper .icon {
       width: 70%;
@@ -45,7 +52,6 @@ body {
         transform: translatey(0px);
         animation: Float 6s ease-in-out infinite; }
     .page .page-wrapper .container {
-      pointer-events: all;
       display: flex;
       width: 100%;
       flex-wrap: wrap; }
@@ -61,8 +67,7 @@ body {
         border-radius: 10px;
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.25); }
   .page .social {
-    pointer-events: all;
-    position: absolute;
+    position: fixed;
     top: 2%;
     right: 3%; }
     .page .social .icon {
@@ -91,6 +96,8 @@ body {
   #bg-canvas {
     display: none; }
 
+  .page .social {
+    top: 1.3%; }
   .page .page-wrapper {
     padding: 5vh 7vw; }
     .page .page-wrapper .bevel {
@@ -104,6 +111,9 @@ body {
       display: none; }
     .page .page-wrapper .container .box3 {
       flex-basis: 100%;
-      padding: 4vw 12vw 0 12vw; } }
+      padding: 4vw 12vw 0 12vw; }
+
+  .impressum {
+    margin: auto 2em; } }
 
 /*# sourceMappingURL=style.css.map */
