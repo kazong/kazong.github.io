@@ -55,17 +55,17 @@ footer {
       display: flex;
       width: 100%;
       flex-wrap: wrap; }
-      .page .page-wrapper .container .box1 {
-        width: 47%; }
+      .page .page-wrapper .container .box1,
+      .page .page-wrapper .container .box3 {
+        width: 47%;
+        pointer-events: all; }
+        .page .page-wrapper .container .box1 img,
+        .page .page-wrapper .container .box3 img {
+          width: 100%;
+          border-radius: 10px;
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.25); }
       .page .page-wrapper .container .box2 {
         width: 6%; }
-      .page .page-wrapper .container .box3 {
-        width: 47%; }
-      .page .page-wrapper .container .box1 img,
-      .page .page-wrapper .container .box3 img {
-        width: 100%;
-        border-radius: 10px;
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.25); }
   .page .social {
     position: fixed;
     top: 2%;

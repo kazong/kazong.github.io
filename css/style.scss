@@ -62,22 +62,18 @@ footer {
             display: flex;
             width: 100%;
             flex-wrap: wrap;
-            .box1 {
-                width: 47%;
-            }
-            .box2 {
-                width: 6%;
-            }
-            .box3 {
-                width: 47%;
-            }
             .box1,
             .box3 {
+                width: 47%;
+                pointer-events: all;
                 img {
                     width: 100%;
                     border-radius: 10px;
                     box-shadow: 0 0 20px rgba(0,0,0,.25);
                 }
+            }
+            .box2 {
+                width: 6%;
             }
         }
     }
